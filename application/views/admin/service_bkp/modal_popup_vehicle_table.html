@@ -1,0 +1,142 @@
+<!-- BEGIN SAMPLE TABLE PORTLET-->
+<div class="portlet-body">
+    <div class="table-scrollable">
+        <table id="table_vehicle" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> #ID </th>
+                        <th> Vehicle Registration Number </th>
+                        <th> Vehicle Model</th>
+                        <td> Remove</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $used_vehicles = array(); // using at bottom
+                    
+                        if(isset($vehicles) && (count($vehicles) > 0)){
+                        
+                            foreach($vehicles as $vh){
+                            
+                                $used_vehicles[] = $vh->id;
+                                ?>
+                                <tr>
+                                    <td> #<?php echo $vh->id; ?> </td>
+                                    <td> <?php echo $vh->regn_number; ?> </td>
+                                    <td> <?php echo $vh->model; ?> </td>
+                                    <td><div class="fa-item"><i title="Remove from this service" onclick="unassign_vehicle('<?php echo $assign_id; ?>','<?php echo $vh->id; ?>');" class="fa fa-remove"></i></div></td>
+                                </tr>
+                                <?php
+                            }
+                        }
+                        else{
+                            ?>
+                                <tr>
+                                    <td colspan="6"> No vehicle assigned </td>
+                                </tr>
+                            <?php
+                        }                   
+                    ?>
+                </tbody>
+            </table>
+    </div>
+</div>
+
+<!-- END SAMPLE TABLE PORTLET-->
+<div class="modal-footer">
+    
+    <?php echo form_open('', array("id" => "popup_assign_vehicle_form", "class" => "form-horizontal")); ?>
+    <input type="hidden" name="assign_id" value="<?php echo $assign_id; ?>"/>
+    <div class="col-md-6">
+        <div class="input-icon right">
+            <i class="fa"></i>
+            <?php
+
+                $options = array('' => '- Available Vehicle -');
+                
+                if(count($free_vehicles) >0) {
+                
+                    foreach($free_vehicles as $free) {
+                    
+                        $options[$free->id] = $free->regn_number.' ('.$free->model.')';
+                    }
+                }
+                
+                if(count($options) == 1){
+
+                    $options = array('' => 'No Vehicle Available');
+                    echo form_multiselect('vehicles[]', $options, '', 'class="bs-select form-control" disabled="disabled"');
+
+                }
+                else{
+                    echo form_multiselect('vehicles[]', $options, '', 'class="bs-select form-control" data-live-search="true" data-size="8" id="vehicles" data-required="1"');
+                }
+
+                
+            ?>
+            <span class="help-block error"> <?php echo form_error("vehicles"); ?> </span>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <input type="button" name="btn_assign_vhl" id="btn_assign_vhl" class="btn green btn-outline left" value="Assign Vehicle"/>
+    </div>
+    
+    <?php echo form_close(); ?>
+    
+    <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>
+</div>
+
+
+<script>
+    
+    $("#btn_assign_vhl").click(function() {
+        
+        $("small.error").remove();
+        
+        var count = 0;
+        
+        $( "select#vehicles option:selected" ).each(function() {
+            if($(this).val()!=''){
+                count++;
+            }
+        });
+        
+        if(count == 0){
+            $("select#vehicles").after('<small class="error">Select atleast one vehicle</small>');
+        }
+        
+        else{
+            swal({
+            title: 'Add Vehicle',
+            text: 'Are you sure want to add selected vehicle in this service?',
+            type: false,
+            allowOutsideClick: true,
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonClass: 'btn-danger',
+            cancelButtonClass: 'btn-primary',
+            closeOnConfirm: true,
+            closeOnCancel: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: "Cancle"
+        }, 
+        function(t) {
+
+            if(t){
+                var param = $("#popup_assign_vehicle_form").serialize();
+                $.post(base_url+'admin/service/assign_vehicle', param, function(htmls) {
+                     $("#modal_vehicle_popup .modal-body").html(htmls);
+                     $('#modal_vehicle_popup').modal('show');
+                });
+
+                    service_detail_list();  
+            }
+        })
+
+        return false;
+        }
+       
+    });
+            
+</script>

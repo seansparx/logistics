@@ -1,0 +1,94 @@
+<!-- BEGIN SAMPLE TABLE PORTLET-->
+<div class="portlet-body">
+    <div class="table-scrollable">
+        <?php
+        if(isset($display) && ($display == 'employee')){
+
+            ?>
+            <table id="table_employee" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> #ID </th>
+                        <th> Employee Name </th>
+                        <th> Employee State</th>
+                        <th> Contract</th>
+                        <th> Category</th>
+                        <td> Remove</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        if(count($employees) > 0){
+                        
+                            foreach($employees as $emp){
+                                ?>
+                                <tr>
+                                    <td> <?php echo emp_code($emp->id); ?> </td>
+                                    <td> <?php echo $emp->emp_name; ?> </td>
+                                    <td> <?php echo $emp->state; ?> </td>
+                                    <td> <?php echo $emp->contract; ?> </td>
+                                    <td> <?php echo $emp->category; ?> </td>
+                                    <td><div class="fa-item"><i title="Remove from this service" onclick="unassign_employee('<?php echo $assign_id; ?>','<?php echo $emp->id; ?>');" class="fa fa-remove"></i></div></td>
+                                </tr>
+                                <?php
+                            } 
+                        }
+                        else{
+                            ?>
+                                <tr>
+                                    <td colspan="6"> No employee assigned </td>
+                                </tr>
+                            <?php
+                        }                   
+                    ?>
+                </tbody>
+            </table>
+            <?php
+        }
+        else if(isset($display) && ($display == 'vehicle')){
+            ?>
+            <table id="table_vehicle" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th> #ID </th>
+                        <th> Vehicle Registration Number </th>
+                        <th> Vehicle Model</th>
+                        <td> Remove</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        if(count($vehicles) > 0){
+                        
+                            foreach($vehicles as $emp){
+                                ?>
+                                <tr>
+                                    <td> #<?php echo $emp->id; ?> </td>
+                                    <td> <?php echo $emp->regn_number; ?> </td>
+                                    <td> <?php echo $emp->model; ?> </td>
+                                    <td><div class="fa-item"><i title="Remove from this service" class="fa fa-remove"></i></div></td>
+                                </tr>
+                                <?php
+                            }
+                        }
+                        else{
+                            ?>
+                                <tr>
+                                    <td colspan="6"> No vehicle assigned </td>
+                                </tr>
+                            <?php
+                        }                   
+                    ?>
+                </tbody>
+            </table>
+            <?php
+        }
+        ?>
+        
+    </div>
+</div>
+
+<!-- END SAMPLE TABLE PORTLET-->
+<div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>
+</div>

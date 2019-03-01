@@ -1,0 +1,174 @@
+﻿1.- MANAGEMENT SHEETS – Employees
+
+>> To manage holidays in the system. We have to create a separate module, where we have to put a list of holidays with date. ( 8 )
+http://awesomescreenshot.com/0eb6absg85
+
+>> To manage employee leaves, we will create a tab system on employee edit page. In the first tab you can edit employee information. And in the 2nd tab you can add leaves for that employee. On the basis of this entry we will show availablity of that employee in the calendar, booking service form etc.
+http://www.awesomescreenshot.com/0f96abs7a7 ( 16 )
+
+
+Client : As well whenever we select “full or part time employee” we need to be able the number of hours per week or month. This will help Human Resources calculate the extra hours. 
+
+>> we will add a text box after the Contract status Fields. Where you can enter number of hours in a month. But please let me know if there any relation beetween number of hours fields and reports. ( 2 )
+http://awesomescreenshot.com/0e36abut4e
+
+
+Client : As well we need to mark whenever an employee or vehicle leaves the company.
+
+>> We will add a check box at the bottom of employee edit form. If you select checked that. Employee will be marked as “he has left the company”. That will not be recoverable in future. ( 10 )
+http://awesomescreenshot.com/0fe6abvz07 
+
+
+
+2.- MANAGEMENT SHEETS – Vehicles
+
+>> To manage vehicle workshop or technical checkups we will create a tab on edit vehicle page. ( like employee leaves ) ( 16 )
+http://awesomescreenshot.com/0b26abwo66
+
+
+
+3.- BOOK SERVICES OR SERVICE SHEET
+
+Client : We need to be able to change “Department and Contract. And now the only
+possibility is to change the time from all the project, we need to be able to change the
+times in specific days. And if it’s possible in a single editing button.
+
+>> I will do that, We will create an interface on service detail list page to editing time for specific days.
+
+
+4.- IT IS IMPORTANT
+Client : When entering edit service, it is necessary to be able to modify all the fields of the
+service.
+Important: We need to be able to change “Department and Contract. And now the only
+possibility is to change the time from all the project, we need to be able to change the
+times in specific days. And if it’s possible in a single editing button.
+
+>> We will add the two fields “Department and Contract” on the service edit page.
+
+5.- THIS IS VERY IMPORTANT
+Client : We need a direct link to “availability for employees and vehicles” selecting the exact days.
+
+>> We will place a link after the dropdown, On clicking that link. We will open a popup box with the availability calendar only for selected date range. ( 16 )
+http://awesomescreenshot.com/09e6ac166d
+
+Client : Important: Right now, it’s not possible to select an employee in a single day if the
+project is longer than one day. We need fix this.
+
+>> Not getting this point.
+
+
+6.- THIS IS VERY IMPORTANT
+Client : We need a direct link to “availability for employees and vehicles” selecting the exact
+days.
+They want to see or just the available or first the available and then the unavailable.
+This is the same in case the vehicles should only appear available for the day we are
+getting the service.
+Important: if the service is several days (from 9-04 to 11 -04) you have to tell me which
+vehicles are available EVERY DAY (from 9 to 11) and which are available on day 9,
+which on day 10 and which day eleven.
+They will surely have to link to the screen of Availability calendar vehicles and show the
+available days on the service (9 to 11).
+In case of being a multi-day service, which are available from (9 to 11 April).
+Important: Right now, it’s not possible to select an employee or vehicles in a single day
+if the project is longer than one day. We need fix this.
+
+>> We will do same like employee module ( 5th point ) ( 16 )
+
+7.- Service Management
+Client : Between initial and ending time we must add daily jobs. In order to be able to visualize
+the works for the day.
+In the example screen, there is service only for day 9, another of 9 to 10, one of 9 to 11
+and another only of 10.
+If I select by date that service there is the day 11 START AND END (that there is one, the third of the screen). DOES NOT GO OUT WHEN YOU DO NOT GET THE DATES
+OF THE SERVICES THAT LAST MORE THAN ONE DAY.
+
+>> Did not understand the requirement.
+
+Client : On the other hand, the dates must be European non-American DD / MM / YY. I
+do not put examples is in the whole application.
+
+>> Okay, We will change this.
+
+
+8.- Reports.
+Client : In the weekly and monthly there is NO OPTION TO TAKE IT OUT BY CONTRACT, only employees and vehicles. We need to add contract.
+
+>> We did not add the contract filter because current layout of weekly/monthly report is not feasible for Contract report. We have to code new logic for this. ( 4 )
+http://awesomescreenshot.com/0b16ac4x30
+
+
+
+
+9.- HUMAN RESOURCES REPORT - ( 8 )
+>> please see the screen-shot, it is my understanding..
+http://awesomescreenshot.com/0476acavbd
+
+detail report will be same as following :
+Date
+Assigned Timings
+Worked Timings
+Total Hours
+Extra hours
+9/04
+8am – 5pm
+8am - 7pm
+9
+2
+--
+--
+--
+-
+-
+--
+--
+--
+-
+-
+--
+--
+--
+-
+-
+
+
+10.- DEPARTAMENT COST.
+Client : We must be being able to filter between dates. (Blue box for filtering between dates)
+>> We will add date range.
+
+11.- PROJECT REPORT
+Client : We must be being able to filter between dates. (Blue box for filtering between dates)
+
+>> We will add date range.
+
+We must put contract name not contract code (the manager will never learn all the codes).
+>> In the contract form there is contract code only. We have to add new text field for the contract name.
+
+12.- DASHBOARD SCREEN
+>> Please explian requirement.
+
+
+13.- Image error
+>> Current calendar design is based on project theme, Any customization in calendar will be considered as Extra scope. Please explain your design need.
+
+
+14.- Timesheet Management
+
+- What's difference between book a service and manage timesheet?
+>> “Book Service” : Create services for contract and assign resources.
+>> “Manage Time-sheet” : It is like attendance, only for recording employee in-time -out-time, so we can calculate the working hours / extra hrs and generate HR Report/ Cost Report of a employee who is assigned in a service.
+Eg. : If employee 'A' is assigned in a service on date : 01/01/2017 with start-time 9 AM – end-time 4 PM. That mean employee 'A' is assigned for 7 hrs on 01/01/2017.
+If you want to calculate extra hours for employee 'A'. you have to record in-time, out-time using “Mange Timesheet” module. When you click “Calculate button ”, If difference of in-time and out-time will exceed more than 7 hrs ( As mention above ). Extra hours will be display in “Extra Time field”.
+
+- The “Calculate Extra Hours” button is not working. 
+>> It is works when difference of in-time – out-time exceeds more than assigned hours.
+- I only can select 3 days of the month.
+>> It is because we have restricted the future date.
+- And it's not letting me to select any employee
+>> Allowed only that employee who is assigned in the contract for selected date. ( only busy employees )
+Eg. On date : 02/04/2017 there are no employee are assigned in any contract.
+
+
+15.- We must translate the program
+>> we have two options
+1. Add Google Translate Plugin ( Less Time )
+2. Convert project into multilingual ( More time than google translate )

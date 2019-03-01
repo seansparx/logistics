@@ -1,0 +1,26 @@
+.error {
+    font-size: 12px;
+    color: #FF0000;
+    float: left;
+    width: 100%;
+}
+
+.sweet-alert{
+	z-index:99999 !important;
+	background-color: #E7E7E7 !important;
+}
+
+.dataTables_wrapper > div.row{ margin: 0}
+
+
+#modal_time_slots .modal-dialog{
+    width: 800px;
+}
+
+.holiday_bg{
+    background-color: #ffedcc;
+}
+
+.weekly_off{
+    background-color: #ffcccc;
+}

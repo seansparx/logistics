@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+.form {
+	width: 100%;
+	overflow: hidden;
+}
+
+.form h2 {
+	color: #333;
+	font: bold 18px/18px Arial, Helvetica, sans-serif;
+	padding-bottom: 20px;
+}
+
+.form p {
+	color: #333;
+	font: normal 12px/15px Arial, Helvetica, sans-serif;
+}
+
+.form p a {
+	color: #0066CC;
+	font: normal 12px/15px Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	float: right;
+}
+
+.form p a:hover {
+	text-decoration: none;
+}
+
+.form label {
+	color: #666;
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	width: 155px;
+	float: left;
+}
+
+.form input[type="text"],.form input[type="password"] {
+	width: 190px;
+	height: 18px;
+	color: #333;
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	padding: 0px 5px;
+	float: right;
+	border: 2px solid #000;
+}
+
+.form select {
+	width: 180px;
+	height: 18px;
+	color: #333;
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	border: 2px solid #000;
+}
+
+.form textarea {
+	width: 200px;
+	height: 150px;
+	color: #333;
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	border: 2px solid #000;
+	float: right;
+}
+
+.green_bt_all a {
+	background: url(../images/gr2_bt.png) right -28px;
+	height: 28px;
+	padding-right: 2px;
+	display: inline-block;
+	width: auto;
+	max-width: auto;
+	overflow: visible;
+}
+
+.green_bt_all span {
+	background: url(../images/gr2_bt.png) left top no-repeat;
+	height: 28px;
+	display: inline-block;
+	padding: 0px 6px 0 9px;
+	color: #fff;
+	font: bold 10px/27px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	width: auto;
+	max-width: auto;
+	overflow: visible;
+}
+
+.green_bt_all {
+	background: url(../images/gr2_bt.png) right -28px;
+	height: 28px;
+	padding-right: 2px;
+	display: inline-block;
+	width: auto;
+	max-width: auto;
+	overflow: visible;
+}
+
+.green_bt_all input[type="submit"],.green_bt input[type="button"] {
+	background: url(../images/gr2_bt.png) left top no-repeat;
+	height: 28px;
+	display: inline-block;
+	padding: 0px 6px 0 9px;
+	color: #fff;
+	font: bold 10px/27px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	border: 0px;
+	width: auto;
+	max-width: auto;
+	overflow: visible;
+	cursor: pointer;
+}
+
+/*.green_bt_all:hover a{ background:url(../images/gr2_bt.png) right -27px; height:27px; padding-right:3px; display:inline-block; width:auto; max-width: auto; overflow:visible;}
+.green_bt_all:hover span{ background:url(../images/gr2_bt.png) left top no-repeat; height:27px; display:inline-block; padding:0px 6px 0 9px; color:#fff; font:bold 10px/27px Arial, Helvetica, sans-serif; text-transform:uppercase; width:auto; max-width: auto; overflow:visible;}
+.green_bt_all:hover{ background:url(../images/gr2_bt.png) right -53px; height:27px; padding-right:3px; display:inline-block; width:auto; max-width: auto; overflow:visible;}
+.green_bt_all:hover input[type="submit"], .green_bt input[type="button"]{ background:url(../images/gr2_bt.png) left 53px no-repeat; height:27px; display:inline-block; padding:0px 6px 0 9px; color:#fff; font:bold 10px/27px Arial, Helvetica, sans-serif; text-transform:uppercase; border:0px; width:auto; max-width: auto; overflow:visible; cursor:pointer;}*/

@@ -1,0 +1,42 @@
+<html>
+    <body>
+                            <table>
+                        <thead>
+                            <tr>
+                                <th> #ID </th>
+                                <th> Vehicle </th>
+                                <th>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th> Contract Title </th>
+                                                <th> Service Title </th>
+                                                <th> Department </th>
+                                                <th> Assign Hours </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                                                    <tr>
+                                            <td>#002</td>
+                                            <td>MERCEDES50</td>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                                                                                        <tr>
+                                                                    <td>MNCARS </td>
+                                                                    <td>Test Service</td>
+                                                                    <td>servicios</td>
+                                                                    <td>24:00 hrs</td>
+                                                                </tr>    
+                                                                                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>    
+                                                            </tbody>
+                    </table>
+                        </body>
+</html>

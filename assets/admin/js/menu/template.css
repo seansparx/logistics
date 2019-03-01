@@ -1,0 +1,83 @@
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+	height: 41px;
+	bottom: 0px;
+	width: 100%;
+	background: url(../../images/grad2.png) repeat-x bottom;
+}
+
+#ja-mainnav a,#ja-subnav a {
+	outline: none;
+	line-height: normal;
+}
+
+#ja-mainnav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+#ja-subnav {
+	clear: both;
+	background: #F6F6F6;
+	margin: 0;
+	padding: 5px 0px 0px 0px;
+	height: 30px;
+}
+
+#ja-subnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#ja-subnav li {
+	background: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#ja-subnav a {
+	display: block;
+	float: left;
+	outline: none;
+	margin: 5px 0px 5px 0px;
+	padding: 0 10px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #999999;
+	border-right: 1px solid #999999;
+}
+
+#ja-subnav a:hover,#ja-subnav a:active,#ja-subnav a:focus {
+	color: #000000;
+	background: url(../images/subnav-hover.gif) no-repeat center bottom;
+	text-decoration: none;
+}
+
+#ja-subnav li.active a {
+	color: #FFFFFF !important;
+	font-weight: bold;
+	background: #000000;
+	text-decoration: none;
+}
+
+#jasdl-mainnav li {
+	overflow: hidden;
+}
+
+#jasdl-mainnav li.active a {
+	color: #999999;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+
+#jasdl-mainnav li.active a span {
+	background: #ffffff url(../images/subnav-hover.gif) no-repeat center
+		bottom !important;
+	color: #999999;
+	margin: 5px 0px 0px 0px;
+}

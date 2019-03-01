@@ -1,0 +1,1316 @@
+/*
+ Table Of Contents
+ 1.) Media Query for Handheld Devices
+ 2.) Media Query for Tablet
+ 3.) Media Query for mobile
+ ===============================================*/
+/*
+ 1.) Media Query for Handheld Devices
+ ===============================*/
+@media only screen and (max-width: 1200px) {
+    .dob-block i {font-size: 9px;padding-top: 3px;}
+    .dob-block .styledSelect {padding-left: 4px;}
+.about-insurance-img img {
+
+}
+.logo-wrap {
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 19px;
+}
+.logo-text-1, .logo-text-2 {
+    font-size: 20px;
+    color: #194270;
+    padding-left: 5px;
+}
+.logo-text-1 {
+    margin-right: -5px;
+}
+.logo-wrap .glyphicon-search {
+    color: #ff7400;
+    font-size: 31px;
+    margin-top: 0px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+.seal-wrap {
+    float: right;
+    margin-top: 8px;
+    /* width: 180px; */
+}
+
+.first-seal {
+    float: left;
+    margin-top: 3px;
+    /* float: left; */
+}
+.first-seal img {
+     width: 55%;
+     padding-right: 15px;
+     float: right;
+}
+.second-seal {
+    float: right;
+    margin-top: 8px;
+}
+.second-seal .review-text {
+    color: #194270;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.review-star {
+    font-size: 0;
+    margin-top: 1px;
+}
+
+.review-star li {
+    display: inline-block;
+    padding: 1px;
+    /* background: #194270; */
+    border-radius: 3px;
+    /* border: 1px solid #194270; */
+    width: 14px;
+    height: 14px;
+    margin-right: -1px;
+    /* font-size: 11px; */
+}
+.review-star li .glyphicon-star {
+    color: #ff7400;
+    font-size: 13px;
+    vertical-align: top;
+    top: 0;
+}
+    .form-area
+    {
+         padding: 55px 47px 0;
+    }
+    .form-area h2 {
+    font-size: 23px;
+}
+.step-wrap p {
+    font-size: 16px;
+}
+.about-insurance-content p {
+    font-size: 16px;
+}
+.customers-say p {
+    font-size: 16px;
+    color: #194270;
+}
+.customers-say .client-name {
+    font-size: 16px;
+}
+.step1-wrap p {
+    font-size: 16px;
+}
+
+.about-insurance-img img {
+    border-radius: 50%;
+    border: #eceef1;
+    border-width: 9px;
+    border-style: solid;
+    margin-top: 18px;
+}
+h2 {
+    font-size: 27px;
+}
+.about-insurance-img {
+    border-radius: 50%;
+}
+.step1-wrap strong {
+    font-size: 22px;
+    color: #194270;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+.form-area-sub-heading {
+    font-size: 16px;
+}
+
+.form-btn span {
+    font-size: 15px;
+}
+.select-width-50 strong {
+    font-weight: 700;
+    margin-top: 1px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.select-wrap i {
+    position: absolute;
+    right: 4px;
+    top: 12px;
+    color: #194270;
+}
+
+input[type="text"], select {
+    font-size: 15px;
+    color: #383355;
+    border: 1px solid #b5b7b9;
+    width: 100%;
+    height: 39px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2) inset;
+}
+.select {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    color: #194270;
+    border: 2px solid #d5d5d5;
+    width: 100%;
+    height: 39px;
+    border-radius: 6px;
+}
+.dob-inital-inner {
+    padding: 10px 8px;
+    display: block;
+    width: 100%;
+    border: 2px solid #d5d5d5;
+    background: #f5f5f5;
+    font-size: 14px;
+    height: 39px;
+    color: #194270;
+    line-height: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.styledSelect {
+    padding: 7px 9px;
+}
+
+.smoke-icon i {
+    top: 3px;
+}
+
+    .footer-brand-list > li
+    {
+         margin-right: 2px;
+    }
+    .brand-logo
+    {
+        margin: 0 auto;
+        float:none;
+    }
+    .brand-logo img
+    {
+        width: 100%;
+    }
+    .step-wrap strong
+    {
+        font-size: 22px;
+    }
+    .customers-say .text .comma-left-icon {
+    left: -25px;
+    position: absolute;
+    top: -22px;
+}
+.select-width-50 strong 
+{
+    display: block;
+    float: none;
+    width: 100%;
+}
+.select-width-50 .select-wrap
+{
+    display: block;
+    float: none;
+    width: 100%;
+}
+.banner-heading {
+    margin-bottom: 0px;
+}
+.banner-heading h1
+{
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    font-size: 32px;
+    padding-bottom: 7px;
+}
+.banner-subheading 
+{
+    padding-right:0;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    line-height: 1.4;
+    }
+    .banner-sub-content .bullets-list
+    {
+        margin: 0 auto;
+        max-width: 412px;
+        margin-top: 31px;
+    }
+    .form-btn strong {
+    font-size: 25px;
+
+}
+
+.bullets-list li {
+    font-size: 15px;
+}
+    
+/*---------------------layout-2----------------*/
+
+.layout-2 .banner-heading {
+    margin-bottom: 0;
+}
+.layout-2 .banner-left {
+    padding-top: 8px;
+}
+
+
+
+/*---------------------layout-3----------------*/
+.layout-3 .brand-logo {
+    margin: 0 auto;
+    width: 256px;
+}
+/*---------------------layout-5----------------*/
+.layout-5 .select-width-50 strong
+{
+    float: left;
+    width: 50%;
+    padding-top: 8px;
+}
+.layout-5 .select-width-50 .select-wrap
+{
+    float: right;
+    width: 50%;
+}
+.form-content-left
+{
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+}
+.form-content-right 
+{
+    width: 100%;
+    float: none;
+    margin-bottom: 6px;
+}
+.layout-5 .brand-logo
+{
+    margin: 0 auto;
+}
+
+
+.layout-5 .form-content-left {
+    width: 100%;
+    float: none;
+    margin-bottom: 0px;
+}
+
+
+
+.banner-left-7 .banner-heading h1
+{
+    width: 100%;
+    font-size: 36px;
+    float: none;
+    text-align: center;
+}
+.banner-5 .form-content {
+    padding-top: 0px;
+}
+
+/*---------------------layout-7----------------*/
+
+.layout-7 .brand-logo {
+    float: none;
+    /* margin-right: 1%; */
+    width: 17%;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* text-align: center; */
+    /* min-width: 17%; */
+}
+
+
+/*---------------------layout-8----------------*/
+.banner-8-wrap-open .cong-8.wide-box
+{
+    width: 940px;
+}
+.cong-8 .cong-left
+{
+    width: 313px;
+     padding: 30px 20px 20px;
+}
+.cong-8 .cong-right
+{
+    width: 627px;
+}
+.cong-right .select-width-50 strong
+{
+     float: left;
+    width: 50%;
+}
+.cong-right .select-width-50 .select-wrap {
+    display: block;
+    float: left;
+    width: 50%;
+}
+.cong-8 .cong-left h2 {
+    margin-bottom: 17px;
+}
+.your-require-wrap h3
+{
+    font-size: 22px;
+}
+/*---------------------layout-9----------------*/
+.banner-9-wrap .banner-left
+{
+    padding-top: 30px;
+}
+.banner-9-wrap .banner-heading
+{
+    margin-bottom: 0;
+}
+.banner-9-wrap .banner-heading h1
+{
+    width: 100%;
+    margin-top: 0px;
+}
+.banner-9 .form-area
+{
+      padding: 25px 23px 40px;
+}
+ .banner-9-wrap .banner-subheading
+{
+     font-size: 22px;
+}
+ .banner-9-wrap .banner-6-upper-content .form-btn strong
+ {
+  font-size: 17px;
+ }
+ .banner-6-upper-content .form-btn span {
+      font-size: 11px;
+}
+.banner-9 .form-area
+{
+    min-height: 582px;
+}
+.layout-9 .seal-wrap
+{
+    margin-left: 11%
+}
+.layout-9 .brand-logo {
+    float: none;
+    width: 23%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/*---------------------layout-10----------------*/
+.banner-10-wrap .banner-heading h1
+{
+    width: 100%;
+    margin-top: 0;
+}
+.banner-10-wrap .banner-left
+{
+    padding-top: 40px;
+}
+.banner-10-wrap .banner-heading
+{
+    margin-bottom: 0;
+}
+.banner-10 .form-area
+{
+      padding: 30px 15px 20px;
+}
+.banner-6 .select-width-50 strong
+{
+    float: left;
+    width: 50%; 
+}
+.banner-6 .select-width-50 .select-wrap
+{
+    float: left;
+    width: 50%; 
+}
+.layout-10 .brand-logo {
+    float: none;
+    width: 25%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+}
+
+
+/*
+ 2.) Media Query for Tablet
+ ===============================*/
+@media only screen and (max-width : 991px) {
+.banner-left {
+    padding-top: 19px;
+}
+    .dob-block i {font-size: 9px;padding-top: 3px;}
+    .dob-block .styledSelect {padding-left: 4px;}
+.customers-say p {
+    font-size: 15px;
+    color: #194270;
+}
+.about-insurance-img img {
+    border-radius: 50%;
+    width: 111%;
+    border: #eceef1;
+    border-width: 9px;
+    border-style: solid;
+}
+.step1-wrap p {
+    font-size: 15px;
+}
+.step-wrap p {
+    font-size: 15px;
+}
+.about-insurance-content p {
+    font-size: 15px;
+}
+.about-insurance-img {
+    border-radius: 50%;
+}
+.brand-logo {
+    width: 50%;
+}
+.brand-logo img {
+}
+.step1-wrap strong {
+    font-size: 19px;
+    color: #194270;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+h2 {
+    font-size: 24px;
+    color: #194270;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+input[type="text"], select {
+    font-size: 15px;
+    color: #383355;
+    border: 1px solid #b5b7b9;
+    width: 100%;
+    height: 38px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2) inset;
+}
+.select {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    color: #194270;
+    border: 2px solid #d5d5d5;
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+}
+.dob-inital-inner {
+    padding: 10px 8px;
+    display: block;
+    width: 100%;
+    border: 2px solid #d5d5d5;
+    background: #f5f5f5;
+    font-size: 14px;
+    height: 38px;
+    color: #194270;
+    line-height: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.styledSelect {
+    padding: 10px 9px;
+}
+
+.smoke-icon i {
+    top: 5px;
+}
+.banner-change .banner-heading h1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 31px;
+    margin-top: 2px;
+    padding-bottom: 7px;
+}
+.banner-heading {
+    margin-bottom: 0px;
+}
+.banner-subheading
+{
+     font-size: 18px;
+     margin-top: 6px;
+     margin-bottom: 21px;
+}
+.form-area
+{
+      padding: 55px 24px 0;
+}
+.banner-sub-content .bullets-list {
+    margin: 0 auto;
+    max-width: 412px;
+    /* margin-top: 48px; */
+}
+
+.bullets-list li .glyphicon {
+    color: #ff7400;
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+.form-area h2 {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.form-area-sub-heading {
+    font-size: 14px;
+}
+
+.form-btn span {
+    font-size: 15px;
+}
+.bullets-list li {font-size: 15px;padding-left: 29px;}
+.form-btn strong
+{
+    font-size: 24px;
+}
+
+
+.long-btn.form-btn .glyphicon-arrow-right
+{
+     left: 3%;
+}
+.long-btn.form-btn .glyphicon-arrow-left
+{
+        right: 3%;
+}
+.brand-list li
+{
+    min-width: 134px;
+}
+.compare-insurance-content
+{
+    padding: 0;
+}
+.step-wrap strong {
+    font-size: 19px;
+}
+
+/*---------------------layout-2----------------*/
+
+
+.layout-2 .seal-wrap
+{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*---------------------layout-3----------------*/
+
+.layout-3 .brand-logo {
+  
+    width: 200px;
+}
+.layout-3 .banner-subheading
+{
+    font-size: 18px;
+     margin-bottom: 40px;
+}
+.save-upto-section h1 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 8px;
+}
+.save-upto-section2 h1 {
+    font-size: 30px;
+}
+
+/*---------------------layout-5----------------*/
+.required-select,.y-dob-select,.do-you-select,.form-btn
+{
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.banner-5 .form-btn .glyphicon-arrow-right {
+    left: 0;
+}
+.banner-5 .form-btn .glyphicon-arrow-left {
+    right: 0;
+}
+.layout-5 .form-content-left {
+    width: 100%;
+    float: none;
+    margin-bottom: 0px;
+}
+.banner-5 .form-area .main-arrow {
+    left: 49%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 32px solid #ffffff;
+}
+.layout-5 .save-upto-section {
+    font-size: 18px;
+    text-align: center;
+}
+/*---------------------layout-6----------------*/
+.banner-6-upper-content .form-btn
+{
+       width:100%;
+}
+.banner-6 > .form-area
+{
+      padding: 40px 15px 30px;
+      border-radius: no;
+}
+.cong-left
+{
+    /*border-bottom: 1px solid #adafb7;*/
+}
+.first-step .banner-6-upper-content
+{
+    width: 100%;
+}
+.first-step .banner-6-upper-content .form-element
+{
+    width: 100%;
+}
+.banner-6 {
+    padding-top: 1px;
+}
+
+/*---------------------layout-7----------------*/
+.banner-7 > .main-arrow{
+    left: 50%;
+}
+.banner-7 .form-area h2
+{
+    text-align: center;
+}
+.banner-7 .form-area-sub-heading
+{
+    text-align: center;
+}
+.cong-right:after
+{
+    display: none;
+}
+.banner-left-7 .banner-heading h1 {
+    width: 100%;
+    font-size: 31px;
+    float: none;
+    text-align: center;
+}
+
+/*---------------------layout-8----------------*/
+.banner-8-wrap-open .cong-8.wide-box
+{
+    width: 720px;
+}
+.cong-8 .cong-left
+{
+    width: 285px;
+     min-height: 1px;
+}
+.cong-8 .cong-right
+{
+    width: 435px;
+}
+.your-require-wrap h3 {
+    font-size: 20px;
+}
+.cong-right .form-area h2 {
+    font-size: 25px;
+}
+.cong-8 .form-area
+{
+      padding: 55px 10px 0;
+}
+
+
+/*---------------------layout-9----------------*/
+.layout-9 .seal-wrap {
+    margin-left: -11%;
+}
+
+.banner-6-upper-content .form-btn strong
+{
+    font-size: 18px;
+}
+.banner-10-wrap .banner-heading h1
+{
+    font-size: 36px;
+}
+
+
+
+.error {
+    font-size: 11px;
+}
+.layout-9.layout-9a .seal-wrap {
+    margin-left: 0;
+    margin-right: -12%;
+}
+.layout-9 .brand-logo {
+    float: none;
+    margin-right: 1%;
+    width: 25%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.styledSelect
+{
+    padding: 7px 9px;
+}
+.layout-10 .brand-logo {
+    float: none;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+}
+
+
+/*
+ 3.) Media Query for mobile
+ ===============================*/
+@media only screen and (max-width : 767px){
+/* Mobile Grids */
+
+.header {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.banner-change .banner-subheading {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+    .dob-block i {font-size: 9px;padding-top: 3px;}
+    .dob-block .styledSelect {padding-left: 10px;}
+.about-insurance-wrap {
+    padding: 19px 0;
+}
+.step1-wrap strong {
+    font-size: 19px;
+    color: #194270;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+.about-insurance-img img {
+    border-radius: 50%;
+    border: #eceef1;
+    border-width: 9px;
+    border-style: solid;
+    margin-top: 0px;
+    width: 50%;
+    max-width: 145px;
+}
+.about-insurance-img {
+    border-radius: 50%;
+
+}
+.about-insurance {
+    margin: 0 auto 14px;
+    text-align: center;
+}
+h2 {
+    font-size: 21px;
+    color: #194270;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.main-arrow {
+    left: 50%;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    /* border-top: 45px solid #ff7400; */
+    content: "";
+    display: block;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 99999;
+}
+.form-btn
+{
+     padding: 14px;
+}
+.brand-logo img {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    max-width: 118px;
+}
+
+.logo-text-1, .logo-text-2 {
+    font-size: 20px;
+    color: #194270;
+    padding-left: 5px;
+}
+.logo-wrap .glyphicon-search {
+    font-size: 20px;
+    color: #ff7400;
+    font-size: 27px;
+    margin-top: 0px;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+input[type="text"], select {
+    font-size: 15px;
+    color: #194270;
+    border: 1px solid #b5b7b9;
+    width: 100%;
+    height: 37px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2) inset;
+}
+.select {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    color: #194270;
+    border: 2px solid #d5d5d5;
+    width: 100%;
+    height: 37px;
+    border-radius: 6px;
+}
+.dob-inital-inner {
+    padding: 9px 8px;
+    display: block;
+    width: 100%;
+    border: 2px solid #d5d5d5;
+    background: #f5f5f5;
+    font-size: 14px;
+    height: 37px;
+    color: #194270;
+    line-height: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.styledSelect {
+    padding: 6px 9px;
+}
+
+
+.smoke-icon i {
+    top: 5px;
+}
+
+
+.form-area h2 {
+    font-size: 20px;
+}
+
+.form-area-sub-heading {
+    font-size: 15px;
+}
+
+.form-btn span {
+    font-size: 18px;
+}
+
+
+.form-btn .glyphicon-arrow-right
+{
+    font-size: 27px;
+    left: 0px;
+}
+.form-btn .glyphicon-arrow-left
+{
+    font-size: 27px;
+    right: 0px;
+}
+    .long-btn.form-btn .glyphicon-arrow-right
+    {
+        font-size: 25px;
+           left: -2px;
+    }
+    .long-btn.form-btn .glyphicon-arrow-left
+    {
+        font-size: 25px;
+        right: -2px;
+    }
+    .form-btn strong
+    {
+        font-size: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .long-btn span {
+    font-size: 11px;
+}
+.logo-wrap
+{
+    text-align: center;
+    float: none;
+    margin-bottom: 9px;
+}
+.seal-wrap
+{
+    float: none;
+    margin: 0 auto 20px;
+}
+.brand-logo
+{
+       margin: 0 auto;
+       float: none;
+       text-align: center;
+}
+
+.banner-change .banner-heading h1 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2px;
+    padding-bottom: 0px;
+}
+
+
+.about-insurance-img
+{
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* width: 42%; */
+}
+.about-insurance-content h2
+{
+    font-size: 20px;
+    text-align: center;
+}
+.compare-insurance-content h2
+{
+    text-align: center;
+}
+.customers-say {
+    padding: 0 20px;
+
+}
+.seal-wrap
+{
+    display: none;
+}
+.layout-5 .banner-left {
+    padding-top: 7px;
+}
+.banner-left {
+    /* padding-top: 15px; */
+    /* padding-bottom: 9px; */
+}
+.pull-right,.pull-left
+{
+    float: none !important;
+}
+.banner-right
+{
+    padding:0;
+    max-width: 400px;
+    margin: 0 auto 17px;
+    /* border-top: 7px solid #ff7400; */
+}
+.form-area 
+{
+    box-shadow: none;
+    padding: 47px 24px 0;
+}
+.mobile-row .form-element
+{
+    float: none;
+    width: 100%;
+    padding-right: 0;
+}
+.banner-sub-content
+{
+    margin-bottom: 20px;
+}
+
+.brand-list
+{
+    text-align: center;
+}
+.brand-list li
+{
+    float: none;
+    display: inline-block;
+}
+/*---------------------layout-2----------------*/
+.layout-2 .seal-wrap
+{
+    margin-right:auto;
+}
+.layout-2 .form-area {
+    margin: 0;
+}
+.layout-2 .main-arrow {
+    display: inline;
+}
+
+/*---------------------layout-3----------------*/
+
+.layout-3 .brand-logo {
+    width: 180px;
+}
+
+.layout-3 .header {
+    box-shadow: none;
+}
+
+.save-upto-section {
+    text-align: center;
+
+}
+.save-upto-section2 {
+    text-align: center;
+    padding: 11px 0;
+    padding-top: 3px;
+}
+
+.save-upto-section
+{
+    border-bottom: 0;
+    padding: 4px 0 0;
+    padding-bottom: 13px;
+}
+.save-upto-section h1 {
+    font-size: 26px;
+}
+.layout-5 .save-upto-section h1 {
+    font-size: 25px;
+}
+.save-upto-section2 h1 {
+    font-size: 26px;
+}
+.layout-3 .banner-heading {
+    margin-bottom: -2px;
+}
+.layout-3 .banner-left
+{
+    padding-top: 12px;
+}
+
+/*---------------------layout-5----------------*/
+.banner-5 .form-area .main-arrow
+{
+       left: 50%;
+}
+.banner-5 .form-area
+{
+    padding-top: 50px;
+}
+.banner-5 .form-area h2
+{
+    text-align: center;
+}
+.banner-5 .form-area-sub-heading
+{
+    text-align: center;
+}
+.banner-section-upper
+{
+    border-bottom: 0;
+}
+.banner-5 .form-btn strong {
+    font-size: 21px;
+}
+.layout-5 .banner-heading {
+    margin-bottom: 0px;
+}
+.layout-5 .save-upto-section {
+    border-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+}
+.layout-5 .center-list.bullets-list {
+    margin-bottom: 0;
+    padding: 9px;
+    max-width: 430px;
+}
+/*---------------------layout-6----------------*/
+.layout-6 .banner-change.banner-left
+{
+     padding: 15px 0 20px;
+}
+.banner-6 .form-area::before
+{
+    display: block;
+}
+.cong-left {
+    min-height: 1px;
+    padding: 29px 6% 20px;
+}
+.your-require-wrap
+{
+    display: none;
+}
+.banner-6 > .form-area {
+    box-shadow: none;
+    padding: 48px 20px 30px;
+    border-radius: 0 0 38px 38px;
+}
+
+
+/*---------------------layout-7----------------*/
+.banner-left-7 .banner-heading h1 {
+    width: 100%;
+    font-size: 25px;
+    float: none;
+    text-align: center;
+    margin-top: 2px;
+}
+.layout-7 .brand-logo {
+    float: none;
+    /* margin-right: 1%; */
+    width: 17%;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* text-align: center; */
+    width: 113px;
+}
+/*---------------------layout-8----------------*/
+
+.banner-8-wrap-open .cong-8.wide-box {
+    width: 320px;
+    margin: 0 auto;
+}
+.cong-8 .cong-left
+{
+    width: 100%;
+    position: static;
+}
+.cong-8 .cong-right
+{
+    width: 100%;
+    float: none;
+}
+.banner-8-wrap-open .cong-8.wide-box
+{
+    
+    -webkit-transition: initial;
+    -moz-transition: initial ;
+    -ms-transition: initial ;
+    -o-transition: initial ;
+    transition: initial ;
+}
+.banner-8-wrap-open .cong-8
+{
+    -webkit-transition: initial;
+    -moz-transition: initial ;
+    -ms-transition: initial ;
+    -o-transition: initial ;
+    transition: initial ;
+}
+/*---------------------layout-9----------------*/
+.banner-9-wrap .banner-heading h1
+{
+    font-size: 36px;
+}
+.banner-9 .form-area
+{
+    min-height: 1px;
+}
+.congro-wrap .cong-8
+{
+    float: none;
+    
+}
+.cong-8
+{
+    background: none;
+}
+.error {
+    font-size: 9px;
+}
+.banner-9 .form-area {
+    padding: 25px 28px 40px;
+}
+.banner-8 .banner-6-upper-content .form-btn
+{
+     padding: 10px 38px;
+}
+
+.banner-10 .form-area
+{
+    box-shadow: none;
+}
+.banner-10 .form-area {
+    padding: 48px 10px 20px;
+}
+.banner-10 .main-arrow
+{
+    top: 0px;
+      border-left: 65px solid rgba(0, 0, 0, 0);
+    border-right: 65px solid rgba(0, 0, 0, 0);
+    border-top: 45px solid #194270;
+}
+
+.form-btn span
+{
+    font-size: 14px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.layout-9 .brand-logo {
+    float: none;
+    width: 23%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+/*---------------------layout-10----------------*/
+
+
+.layout-10 .brand-logo {
+    float: none;
+    width: 25%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+
+}
+

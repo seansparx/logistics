@@ -1,0 +1,779 @@
+<?php
+//fuction will return the refereral url if not found will return default url and if default url not passed will return site url
+// @arg  Defautl url in case no http refere found
+//@return return the refereral url if not found will return default url and if default url not passed will return site url
+function getRefererUrl($defautlurl=''){
+    if(isset($_SERVER['HTTP_REFERER'])){
+        return $_SERVER['HTTP_REFERER'];
+    }    
+    else if(trim($defautlurl)){
+        return site_url($defautlurl);
+    }else{
+        return site_url();
+    }
+    
+}
+// Dispaly date in formatted way
+//@Arg : Timestamp
+//@return : formatted date
+function displayDate($time=0){
+    return date(DATE_FORMAT_IN_ADMIN,$time);
+}
+function displayDateWithLang($time=0){
+    return date(DATE_FORMAT_IN_FRONT,$time);
+}
+function displayStatus($status=0){
+    $state='Inactive';
+    if($status='1')
+            $state='Active';
+    return $state;
+}
+// return the drop-down  options in status box
+function getStatusOption(){
+    return array('0'=>'Inactive','1'=>'Active');
+}
+function getActionOption(){
+    return array('0'=>'Select option','1'=>'Delete Selected','2'=>'Enable Selected','3'=>'Disable Selected');
+}
+function getBlockActionOption()
+{
+    return array('0'=>'Select option','2'=>'Enable Selected','3'=>'Disable Selected');
+}
+
+function getActionOptionReview(){
+    return array('0'=>'Select option','1'=>'Delete Selected','2'=>'Approve Selected','3'=>'Put off Selected');
+}
+function getSingleOption(){
+    return array('0'=>'Select option','1'=>'Delete Selected');
+}
+function getGenderOption(){
+    return array('1'=>'Male','2'=>'Female','3'=>'Common');
+}
+function getDayNameArray() {
+   return array(
+        '0'  => 'Mon',
+        '1'  => 'Tue',
+        '2'  => 'Wed',
+        '3'  => 'Thu',
+        '4'  => 'Fri',
+        '5'  => 'Sat',
+        '6'  => 'Sun'      
+    ); 
+}
+function getHoursArray() {
+    $i=0.0;
+    $hours=array();
+    while($i<24.0){
+      $hours["$i"]=((floor($i)==0)?12:(($i<13)?floor($i):floor($i)-12)).':'.((($i-floor($i)==.5)?'30':'00').(($i<12)?' am':' pm')); 
+      $i+=0.5;
+    }
+    return $hours;
+}
+
+function showMsg(){
+    $ci=& get_instance(); 
+    $message='';
+    if(trim($ci->session->flashdata('error'))){
+        echo '<div class="server-error">'.$ci->session->flashdata('error').'</div>';
+    }
+    if(trim($ci->session->flashdata('success'))){
+        echo '<div class="server-success">'.$ci->session->flashdata('success').'</div>';
+    }
+}
+
+function checktest(){
+    $ci=& get_instance(); 
+    $ci->load->model('general_model');
+    echo $ci->lang->line('facebook');
+    exit;
+    $ci->general_model->checkMailTemplatePermissionr($mailTempId,$userId);
+}
+/*
+* To create sorting url for lists
+* @param string $action:-controller/method
+* @param string $title:-title as display may be html
+* @param string $title:-as in DB colunm name 
+* @param array $attributes:-an optional param for attributes
+*/
+
+function sortUrl($action, $title, $orderby, $attributes = array()) {
+   $ci=& get_instance(); 
+   $sorting_url = $action;
+   $uri_array = $ci->uri->uri_to_assoc(4); //because we are using admin in sub-directory so 4
+   unset($uri_array['page']);
+   if (array_key_exists('orderby', $uri_array) && ($orderby == $uri_array['orderby'])) {
+       $attributes['class'] = (array_key_exists('class', $attributes) ? trim($attributes['class']) : '') . ' sortinglink ';
+       if (array_key_exists('order', $uri_array) && ($uri_array['order'] == 'desc')) {
+           $attributes['class'] = $attributes['class'] . 'desc';
+       } else {
+           $attributes['class'] = $attributes['class'] . 'asc';
+       }
+   }
+   $uri_array['order'] = array_key_exists('order', $uri_array) ? (($uri_array['order'] == 'asc') ? 'desc' : 'asc') : 'asc';
+   $uri_array['orderby'] = $orderby;
+   if (array_key_exists('search', $uri_array) && !trim($uri_array['search'])) {
+       unset($uri_array['search']);
+   }
+   foreach ($uri_array as $uri_key => $uri_value) {
+       if (trim($uri_value)) {
+           $sorting_url.='/' . $uri_key . '/' . $uri_value;
+       }
+   }
+   return anchor($sorting_url,$title, $attributes);
+}
+/**
+* To create post time string
+* @paran time in seconds
+* @return String
+*/
+function createPostTimeString($activity_time) {
+   //return $activity_time;
+   $ci=& get_instance(); 
+   if ((time() - $activity_time) > 86400) {
+       $month_array=getMonthArray();
+       return  $month_array[date('n', $activity_time)] . date(' d, Y', $activity_time);
+   } elseif ((time() - $activity_time) > 3600) {
+       return intval((time() - $activity_time) / 3600) . ' ' . $ci->lang->line((((time() - $activity_time) / 3600) > 1) ? 'hrs' : 'hr') . ' ' . $ci->lang->line('ago');
+   } elseif ((time() - $activity_time) > 60) {
+       return intval((time() - $activity_time) / 60) . ' ' . $ci->lang->line((((time() - $activity_time) / 60) > 1) ? 'minutes' : 'minute') . ' ' . $ci->lang->line('ago');
+   } else {
+       return intval(time() - $activity_time) . ' ' . $ci->lang->line((((time() - $activity_time)) > 1) ? 'seconds' : 'second') .' ' . $ci->lang->line('ago');
+   }
+}
+function getMonthArray() {
+    $ci=& get_instance();
+    return array(
+        '01'  => '01',
+        '02'  => '02',
+        '03'  => '03',
+        '04'  => '04',
+        '05'  => '05',
+        '06'  => '06',
+        '07'  => '07',
+        '08'  => '08',
+        '09'  => '09',
+        '10' => '10',
+        '11' => '11',
+        '12' => '12'
+    );
+}
+/*
+ * Method displayUserName() to display username
+ * @param string $nickname
+ * @param string $f_name
+ * @param string $l_name
+ * @return string display name
+ */
+function displayUserName($nickname,$f_name,$l_name) {
+    $display_name = trim($nickname)?$nickname:($f_name.' '.$l_name);
+    return (strlen($display_name)>MAX_ALLOWED_CHARACTERS_IN_USERNAME)?substr($display_name, 0 ,MAX_ALLOWED_CHARACTERS_IN_USERNAME).'...':$display_name;
+}
+function get_static_block_by_id($id=NULL)
+{
+     $ci=& get_instance();
+     $query=$ci->db->select('tb.id,tb.title,tbd.content')
+                ->from(TBL_BLOCKS.' as tb')
+                ->join(TBL_BLOCKS_DESC.' as tbd ','tb.id=tbd.block_id','left')
+             ->where('tb.status','1')
+             ->where('tbd.langId',$ci->lang->langId())
+             ->where('tb.id',$id)->get();
+     if($query->num_rows>0)
+     {
+     $result=$query->row_array();
+     }else
+     {
+         $result=array('title'=>'','id'=>'','content'=>'');
+     }
+    return $result;
+   
+}
+function get_lang_detail_by_id($id=NULL,$req=array())
+{
+    $ci=& get_instance();
+    if(sizeof($req)>0)
+    {
+        $ci->db->select($req);
+    }
+    if($id!=NULL){
+   $query=$ci->db->where('id',$id)->get(TBL_LANGUAGE);
+    if ($query->num_rows() > 0) {
+           $result=$query->row();
+        }
+      
+        return $result;
+    }
+ else {
+         $ci->db->where('status','1');
+     $query=$ci->db->get(TBL_LANGUAGE);
+     $result['']='All';
+     foreach ($query->result() as $row)
+     {
+         $result[$row->id]=$row->language_name;
+     }
+        return $result;
+    }
+    
+    
+}
+function get_plan_duration_by_id($id)
+{
+     $ci=& get_instance();
+    
+    $query=$ci->db->where('id',$id)->get(TBL_PLANS);
+    if ($query->num_rows() > 0) {
+           $result=$query->row();
+        
+      $for="";    
+         switch ($result->duration_for) {
+                                        case 'M':
+                                            $for= "Months";
+                                            break;
+                                        case 'W':
+                                            $for= "Weeks";
+                                            break;
+                                        case 'D':
+                                            $for= "Days";
+                                            break;
+                                        case 'Y':
+                                            $for= "Years";
+                                            break;
+                                        
+                                    }
+        return $result->duration_integer." ".$for;                            
+    }  
+    return NULL;
+                                    
+}
+
+function get_currency_from_tbl($key_name,$value_name,$tbl_name,$condition=  array())
+{
+     $ci=& get_instance();
+     
+    $query=$ci->db->from($tbl_name)
+     ->select($key_name)
+            ->select('currency_symbol')
+      ->select($value_name)
+            ->order_by($value_name,'asc')
+    ->where($condition)->get()->result();
+    $result['']='Select';
+    foreach ($query as $obj)
+    {
+        $result[$obj->$key_name]=  strtoupper($obj->$value_name)." (".$obj->currency_symbol.")";
+    }
+    
+   return $result;
+    
+    
+}
+function get_currency_by_id($id,$symbol=NULL)
+{
+    $ci =& get_instance();    
+    $query=$ci->db->where('id',$id)->get(TBL_CURRENCY);
+    foreach ($query->result() as $row)
+    {  
+        if($symbol===TRUE)
+        {
+             $currency=strtoupper($row->currency_code)." (".$row->currency_symbol.")";
+        }else
+        {
+        $currency=strtoupper($row->currency_code);
+        }
+    }
+    return $currency;
+}
+function get_currency_symbol_id($id)
+{
+    $ci =& get_instance();    
+    $query=$ci->db->where('id',$id)->get(TBL_CURRENCY);
+    foreach ($query->result() as $row)
+    {  
+         $currency=$row->currency_symbol;
+    }
+    return @$currency;
+}
+function get_file_extension($file_name) {
+	return substr(strrchr($file_name,'.'),1);
+}
+function get_domicile_data_for_dropbox()
+{
+    $ci =& get_instance(); 
+    //echo $ci->lang->langId();
+    $ci->db->select('dom.id,dom_desc.domicile_name')
+            ->from(TBL_DOMICILE." as dom")
+            ->join(TBL_DOMICILE_DESC." as dom_desc",'dom.id = dom_desc.`domicile_id` AND dom_desc.`langId` ='.$ci->lang->langId(),'left')
+            ->where('dom.status','1')
+            ->where('deleted_at IS NULL',NULL,FALSE)
+            ->order_by('dom.at_top','desc')
+            ->order_by('dom.domicile','asc');
+            
+   $query=$ci->db->get();
+  
+   foreach ($query->result() as $row) {
+       $return_array[$row->id]=  strtoupper($row->domicile_name);
+   }
+    
+  return $return_array;
+    
+    
+    
+}
+function get_language_data_for_dropbox($req=FALSE)
+{
+    $ci =& get_instance(); 
+    //echo $ci->lang->langId();
+    $return_array=array();
+    $ci->db->select('lng.id,lng_desc.language_name')
+            ->from(TBL_INTRPRTR_LANGUAGES." as lng")
+            ->join(TBL_INTRPRTR_LANGUAGES_DESC." as lng_desc",'lng.id = lng_desc.`lang_id` AND lng_desc.`langId` ='.$ci->lang->langId(),'left')
+            ->where('deleted_at IS NULL',NULL,FALSE)
+            ->where('lng.status','1');
+           
+            
+   $query=$ci->db->get();
+   if(!$req)
+   foreach ($query->result() as $row) {
+       $return_array[$row->id]=$row->language_name;
+   }
+    
+  return $return_array;
+    
+    
+    
+}
+function get_captcha_image()
+{
+     $ci =& get_instance(); 
+    $word=getRandomWord(5);
+    $vals = array(
+    'word'	 => $word,
+    'img_path'	 => './assets/captcha/',
+    'img_url'	 => base_url().'assets/captcha/',
+    'font_path'	 => base_url().'assets/fonts/vegur-b_0.602-webfont.ttf',
+    'img_width'	 => '130',
+    'img_height' => 30,
+    'expiration' => 7200
+    );
+
+$cap = create_captcha($vals);
+/*$data = array(
+    'captcha_time'	=> $cap['time'],
+    'ip_address'	=> $ci->input->ip_address(),
+    'word'	 => $cap['word']
+    );*/
+
+//$query = $ci->db->insert_string(TBL_CAPTCHA, $data);
+//$ci->db->query($query);
+$cap['audio']=$ci->texttospeech->speak($cap['time'],$cap['word']);
+return $cap;
+
+}
+function getRandomWord($len = 10) {
+    $word = array_merge(range(1,9),range('A', 'Z'));
+    shuffle($word);
+    return substr(implode($word), 0, $len);
+}
+function get_captcha_audio($word)
+{
+    $ci= & get_instance();
+   $mp3=$ci->texttospeech->speak($word);
+   
+    
+}
+function remove_captcha($filename)
+{
+    @unlink(DIR_CAPTCHA.$filename.".jpg");
+    @unlink(DIR_CAPTCHA.$filename.".wav");
+}
+ function input_box_normal($name = 0, $postdata) {
+        
+        $tbl = '';
+       $textboxname = $name ;
+                $textboxvalue = $name ;
+                $value = $postdata[$textboxvalue];
+                $data = array(
+                    'name' => $textboxname,
+                    'id' => $textboxname,
+                    'value' => stripslashes($value),
+                        );
+                $tbl.=form_input($data);
+        $tbl.= '<div id="'.$textboxname.'_err" class="error">' .form_error($textboxname). '</div>';
+         return $tbl;
+    }
+   function dropdown_box_normal($name = 0,$arr, $postdata,$class=null) {
+         
+        $tbl = '';
+       $textboxname = $name ;
+                $textboxvalue = $name ;
+                $value = $postdata[$textboxvalue];
+                $data = array(
+                    'name' => $textboxname,
+                    'id' => $textboxname,
+                    'class' => $class,
+                );
+                
+               $tbl.=form_dropdown($name,$arr,$value,'id='.$name.' '.'class='.$class) ;
+        $tbl.= '<div id="'.$textboxname.'_err" class="error">' . form_error($textboxname) . '</div>';
+         return $tbl;
+    } 
+    
+    function check_box_normal($name = 0, $postdata,$value=NULL) {
+        
+        $tbl = '';
+        $textboxname = $name ;
+                $textboxvalue = $name ;
+                $checked='';
+                if(isset($postdata[$textboxvalue]))
+                {
+                    $checked=TRUE;
+                }
+                $data = array(
+                    'name' => $textboxname,
+                    'id' => $textboxname,
+                    'value' => stripslashes($value),
+                    'checked'=>$checked,
+                    
+                );
+               
+               $tbl.=form_checkbox($data);
+                return $tbl;
+    }
+    function addSession($arr=array())
+    {
+         $ci= & get_instance();
+        clearSession($arr);    
+        foreach ($arr as $key => $value) {
+            $ci->session->set_userdata($key,$value);
+        }
+        
+    }
+    function clearSession($arr=array())
+    {
+         $ci= & get_instance();
+      // print_r($arr);exit;
+         
+      $ci->session->unset_userdata($arr);
+        
+    }
+    function removeAllSession()
+    {
+         $ci= & get_instance();
+      $arr=$ci->session->all_userdata();
+      foreach ($arr as $key=>$value)
+      {
+           $ci->session->unset_userdata($key);
+      }
+         
+      //$ci->session->unset_userdata($arr);
+        
+    }
+    
+    function checkSession($key,$val_to_check=null)
+    {
+          $ci= & get_instance();
+        $val=$ci->session->userdata($key);
+        if($val_to_check==null)
+        {
+            if(!empty($val))
+            {
+                return true;
+                
+                
+            }
+        }  else {
+            
+            if(!empty($val)&&$val==$val_to_check)
+            {
+                return true;
+                
+            }
+            
+            
+        }
+        
+        return false;
+    }
+    function get_system_config($var)
+    {
+        $ci=& get_instance();
+       $query=$ci->db->select('systemVal')->from(TBL_SYSTEMCONFIG)->where('systemName',$var)->get();
+       $row=$query->row();
+       return $row->systemVal;
+         
+    }
+    function get_intro_video()
+    {
+          $ci=& get_instance();
+          $query=$ci->db->select('video_path')->from(TBL_VIDEO)->where('status','1')->get();
+          $row=$query->row();
+          return $row->video_path; 
+    }
+    function get_billing_period($d)
+    {
+        switch ($d) {
+            case 'D':
+                return 'Day';
+                break;
+            case 'W':
+                return 'Week';
+                break;
+            case 'M':
+                return 'Month';
+                break;
+            case 'Y':
+                return 'Year';
+                break;
+
+            
+        }
+        
+    }
+ function getYearArray() {
+    $current = date('Y', time());
+    $start= date('Y', time())-100;
+    $year_arr=array();
+   
+    while ($start <= $current) {
+        $year_arr[$start] = $start;
+        $start++;
+    }
+    return array_reverse($year_arr,TRUE);
+}
+function get_interpretertype_for_dropbox()
+{
+    
+    $ci =& get_instance(); 
+    //echo $ci->lang->langId();
+    $ci->db->select('type.id,type_desc.cat_name')
+            ->from(TBL_INTERPRETATION_TYPE." as type")
+            ->join(TBL_INTERPRETATION_TYPE_DESC." as type_desc",'type.id = type_desc.`cat_id` AND type_desc.`langId` ='.$ci->lang->langId(),'left')
+            ->where('type.status','1')
+            ->where('type.parent_id','0')
+            ->where('deleted_at IS NULL',NULL,FALSE)
+           ->order_by('type.cat_name','asc');
+            
+   $query=$ci->db->get();
+   $return_array['']=$ci->lang->line('select_interpreter_type');
+   foreach ($query->result() as $row) {
+       $return_array[$row->id]=$row->cat_name;
+   }
+    
+  return $return_array;
+    
+}
+function get_interpreter_lang_pair($id)
+{
+     $ci =& get_instance(); 
+     $ci->db->from(TBL_INTERPRETER_PROFILE_LANG_PAIR)
+            ->where('interpreter_id',$id)
+            ->where('status','1');
+    $query=$ci->db->get();
+    return $query;
+    
+    
+}
+
+
+function getRecords($table , $fields="*" , $condition=1  )
+{
+		$CI = & get_instance();
+		$SQL = " SELECT   ".$fields. "  FROM `".$table. "`  WHERE  ".$condition  ;  
+		$query = $CI->db->query($SQL);	
+                //echo $CI->db->last_query();die;
+                return $query;
+}
+
+function getQuery($sql , $fields="*" , $condition=1  )
+{
+		$CI = & get_instance();
+		return $query = $CI->db->query($sql );	
+}
+
+function pr($printr)
+{
+	echo "<pre>";  print_r($printr); echo "</pre>";
+}
+
+
+
+function get_interpreter_avatar($id)
+{
+    $ci =& get_instance(); 
+     $row=$ci->db->from(TBL_INTERPRETER_PROFILE_DETAIL)
+            ->where('interpreter_id',$id)->get()->row();
+     
+     return (!empty($row->avatar))?$row->avatar:'no-avatar.jpg';
+            
+    
+}
+function get_interpreter_cv($id)
+{
+    $ci =& get_instance(); 
+     $row=$ci->db->select('cv')->from(TBL_INTERPRETER_PROFILE_DETAIL)
+            ->where('interpreter_id',$id)->get()->row();
+     if(!empty($row->cv))
+     {
+         return $row->cv;
+     }
+     return NULl;
+     
+            
+    
+}
+function get_interpreter_language_in_site_language($id)
+{
+    
+    $ci =& get_instance(); 
+     $row=$ci->db->select('language_name')->from(TBL_INTRPRTR_LANGUAGES_DESC." as dsc")->join(TBL_INTRPRTR_LANGUAGES." as lng","lng.id=dsc.lang_id",'left')
+            ->where(array('dsc.langId'=>$ci->lang->langId(),'dsc.lang_id'=>$id))->where("(lng.status='1' and lng.deleted_at IS NULL)",null,false)->get()->row();
+     
+     if(!empty($row->language_name))
+     {
+         return $row->language_name;
+     }
+     return NULL;
+    
+    
+}
+function getUserImageUrl($filename='',$size='thumb',$sex='1'){
+    $file_path='files/user/'.$size;
+    return base_url($file_path.'/'.((is_file($file_path.'/'.$filename))?$filename:(($sex=='2')?'avatar-female.jpg':'avatar-male.jpg')));
+}
+function displaySortTitle($title,$size=FALSE) {
+    $size=$size?$size:MAX_ALLOWED_CHARACTERS_IN_TITLE;
+    return (strlen($title)>$size)?substr($title, 0 ,$size).'...':$title;
+}
+function can_switch()
+{ 
+     
+    $ci =& get_instance(); 
+    
+    $email=$ci->session->userdata('email');
+    if(isset($email))
+    {
+    $ci->db->from(TBL_USERS)->where(array('email'=>$email,'status'=>'1'))->where('deleted_at IS NULL',NULL,FALSE);
+            $query=$ci->db->get();
+    //echo $ci->db->last_query();
+    if($query->num_rows()>'1')    
+    return TRUE;
+        
+    }
+    
+    return FALSE;
+}
+function isInterpreterLogin()
+{
+    $ci =& get_instance(); 
+    return $ci->isInterpreterLogin();
+}
+/**
+* To send sms
+* @param array $data :
+ to=>mobile_number with country code i.e.(+911234567890),from=>(optional)mobile_number with country code i.e.(+911234567890)
+ message=>string(any text message)
+* @return boolean/string
+*/
+function sendSMS($data){ //print_r($data);
+    $ci=& get_instance(); 
+    $ci->load->library('twilio');
+    $response = $ci->twilio->sms((array_key_exists('from', $data))?$data['from']:TWILIO_FROM_MOBILE, $data['to'], $data['message']);
+    //echo '<pre>'; print_r($response);// exit;
+    if($response->IsError)
+       return $response->ErrorMessage;
+    else
+       return TRUE;
+}
+function getYearArrayForPayment() {
+    $current = date('Y', time());
+    $end= date('Y', time())+50;
+    $year_arr=array();
+   
+    while ($current<$end) {
+        $year_arr[$current] = $current;
+        $current++;
+    }
+    return $year_arr;
+}
+
+
+function getLanguageStringValue($value , $lang_id)
+{
+	$CI = & get_instance();
+	$SQL =  " SELECT ltr.string_translation  FROM ".TBL_LANGUAGES_STRINGS."  as lt 
+			  LEFT JOIN ".TBL_LANGUAGE_TRANSLATIONS." as ltr  on lt.id=ltr.string_id 
+			  WHERE ltr.lang_id='".$lang_id."'  AND lt.lang_string='".$value."' AND JS='0' ";
+		$reco = $CI->db->query($SQL)->row_array();	
+		//print_r($reco);
+		return $reco['string_translation'];
+}
+function remove_stored_file($path_array=NULL,$file_name=NULL)
+{
+    if($path_array!=NULL&&$file_name!=NULL&&trim($file_name)&&count($path_array)>'0')
+    {
+        
+        foreach ($path_array as $path) {
+            
+           if(file_exists($path.$file_name))
+                   { 
+            @unlink($path.$file_name);
+                   }
+        }
+        
+        
+    }
+    
+}
+function get_last_updated_at($id=NULL)
+    {
+       if($id!=NULL)
+        {
+             $CI = & get_instance();
+            $query=$CI->db->select('updated_at')->from(TBL_USERS)->where(array('id'=>$id))->get()->row();
+            $todays_date=date("d/m/y");
+           $update_date=date("d/m/y",$query->updated_at);
+            if($todays_date==$update_date)
+            {
+               $updated_minute=round(abs(time() - $query->updated_at) / 60);
+                if($updated_minute>'59')
+                {
+                    $hour=ceil($updated_minute/60);
+                    if($hour=='1')
+                    {
+                        return $updated_hour="Last updated ".$hour." hour ago";
+                    }
+                    return $updated_hour="Last updated ".$hour." hours ago";
+                }
+                else
+                {
+                    if($updated_minute=='1'||$updated_minute<'1')
+                    {
+                        return "Last updated ".$updated_minute." minute ago";
+                    }
+                    return "Last updated ".$updated_minute." minutes ago";
+                }
+            }
+            else
+            {
+               
+                $days=ceil(abs(time() - $query->updated_at) / 86400);
+                if($days<'15')
+                {
+
+                     if($days=='1')
+                     {
+                         return "Last updated ".$days." day ago";
+                     }
+                    else {
+                         return "Last updated ".$days." days ago";
+                    }
+                }
+               return "Last updated on ".$update_date; 
+            }
+            exit;
+        }
+
+    }
+
+
+
+
+?>

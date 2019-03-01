@@ -1,0 +1,141 @@
+<!-- BEGIN SAMPLE TABLE PORTLET-->
+<div class="portlet-body">
+    <div class="table-scrollable">
+
+        <table id="table_employee" class="table table-hover">
+            <thead>
+                <tr>
+                    <th> #ID </th>
+                    <th> Employee Name </th>
+                    <th> Employee State</th>
+                    <th> Contract</th>
+                    <th> Category</th>
+                    <td> Remove</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                                        
+                    if(isset($employees) && count($employees) > 0){
+
+                        foreach($employees as $emp){
+                            ?>
+                            <tr>
+                                <td> <?php echo emp_code($emp->id); ?> </td>
+                                <td> <?php echo $emp->emp_name; ?> </td>
+                                <td> <?php echo $emp->state; ?> </td>
+                                <td> <?php echo $emp->contract; ?> </td>
+                                <td> <?php echo $emp->category; ?> </td>
+                                <td><div class="fa-item"><i title="Remove from this service" onclick="unassign_employee('<?php echo $assign_id; ?>','<?php echo $emp->id; ?>');" class="fa fa-remove"></i></div></td>
+                            </tr>
+                            <?php
+                        } 
+                    }
+                    else{
+                        ?>
+                            <tr>
+                                <td colspan="6"> No employee assigned </td>
+                            </tr>
+                        <?php
+                    }                   
+                ?>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<!-- END SAMPLE TABLE PORTLET-->
+<div class="modal-footer">
+    <?php echo form_open('', array("id" => "popup_assign_emp_form", "class" => "form-horizontal")); ?>
+    <input type="hidden" name="assign_id" value="<?php echo $assign_id; ?>"/>
+    <div class="col-md-6">
+        <div class="input-icon right">
+            <i class="fa"></i>
+            <?php
+                $options = array('' => '- Available Employee -');
+                
+                if(count($free_employee) > 0) {
+                
+                    foreach($free_employee as $free) {
+                    
+                        $options[$free->id] = $free->emp_name.' ('.emp_code($free->id).')';
+                    }
+                }
+                
+                if(count($options) == 1){
+                    $options = array('' => 'No Employee Available');
+                    echo form_multiselect('employees[]', $options, '', 'class="bs-select form-control" disabled="disabled"');
+                }
+                else{
+                    echo form_multiselect('employees[]', $options, '', 'class="bs-select form-control" data-live-search="true" data-size="8" id="employees" data-required="1"');
+                }
+
+                
+            ?>
+            <span class="help-block error"> <?php echo form_error("employees"); ?> </span>
+        </div>
+    </div>
+    
+    <div class="col-md-2">
+        <input type="button" name="btn_assign_emp" id="btn_assign_emp" class="btn green btn-outline left" value="Assign Employee"/>
+    </div>
+    
+    <?php echo form_close(); ?>
+    <button type="button" data-dismiss="modal" class="btn dark btn-outline">Close</button>
+</div>
+
+<script>
+    
+    $("#btn_assign_emp").click(function() {
+        
+        $("small.error").remove();
+        
+        var count = 0;
+        
+        $( "select#employees option:selected" ).each(function() {
+            if($(this).val()!=''){
+                count++;
+            }
+        });
+        
+        if(count == 0){
+            $("select#employees").after('<small class="error">Select atleast one employee</small>');
+        }
+        
+        else {
+
+            swal({
+            title: 'Add Employee',
+            text: 'Are you sure want to add selected employee in this service?',
+            type: false,
+            allowOutsideClick: true,
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonClass: 'btn-danger',
+            cancelButtonClass: 'btn-primary',
+            closeOnConfirm: true,
+            closeOnCancel: true,
+            confirmButtonText: 'Yes',
+            cancelButtonText: "Cancle"
+        }, 
+        function(t) {
+            if(t){
+                   
+                    var param = $("#popup_assign_emp_form").serialize();
+                    $.post(base_url+'admin/service/assign_employee', param, function(htmls){
+                         $("#modal_employee_popup .modal-body").html(htmls);
+                         $('#modal_employee_popup').modal('show');
+                    });
+
+                    service_detail_list(); 
+                }
+        })
+
+        return false;
+
+
+        }
+    });
+            
+</script>

@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------------
+# JA Sanidine II for Joomla 1.5 - Version 1.0 - Licence Owner JA107844
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+/* Script Dropline Menu
+--------------------------------------------------------- */
+#ja-subnav ul {
+	display: none;
+}
+
+#jasdl-mainnav {
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+
+#jasdl-mainnav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#jasdl-mainnav li {
+	float: left;
+	padding: 0 1px 0 0;
+	margin: 0;
+	background: url(../../images/mainnav-sep.gif) no-repeat right bottom;
+}
+
+#jasdl-mainnav a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000000;
+	margin-top: 10px;
+	padding: 0 20px 0 20px;
+	height: 30px;
+	line-height: 32px;
+	font-size: 92%;
+	font-size: 13px;
+}
+
+#jasdl-mainnav a span {
+	display: block;
+	float: left;
+	padding: 0 0 0 0;
+	height: 30px;
+	line-height: 32px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+#jasdl-mainnav a:hover,#jasdl-mainnav ul li.hover a {
+	color: #999999;
+}
+
+#jasdl-mainnav a:hover span,#jasdl-mainnav ul li.hover a span {
+	background: url(../../images/navigation-bg.png) center bottom no-repeat;
+}
+
+#jasdl-mainnav li.active a,#jasdl-mainnav li.active a:hover,#jasdl-mainnav li.active a:active,#jasdl-mainnav li.active a:focus
+	{
+	margin-top: 0;
+	height: 40px;
+	line-height: 45px;
+	font-size: 115%;
+	background: #ffffff url(../../images/navigation-bg-active.png) center
+		top no-repeat;
+}
+
+#jasdl-mainnav li.active a span,#jasdl-mainnav li.active a:hover span,#jasdl-mainnav li.active a:active span,#jasdl-mainnav li.active a:focus span
+	{
+	height: 40px;
+	line-height: 40px;
+	background: url(../../images/mainnav-active.gif) no-repeat right top
+		#D58400;
+	cursor: pointer;
+}

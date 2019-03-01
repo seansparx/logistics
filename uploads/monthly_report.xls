@@ -1,0 +1,1009 @@
+
+<html>
+    <body>
+    <table>
+        <thead>
+            <tr>
+                <th> # </th>
+                <th> Employee Name </th>
+                <th><div class="text-center"><b>THU - 01/06</b></div></th><th><div class="text-center"><b>FRI - 02/06</b></div></th><th><div class="text-center"><b>SAT - 03/06</b></div></th><th><div class="text-center"><b>SUN - 04/06</b></div></th><th><div class="text-center"><b>MON - 05/06</b></div></th><th><div class="text-center"><b>TUE - 06/06</b></div></th><th><div class="text-center"><b>WED - 07/06</b></div></th><th><div class="text-center"><b>THU - 08/06</b></div></th><th><div class="text-center"><b>FRI - 09/06</b></div></th><th><div class="text-center"><b>SAT - 10/06</b></div></th><th><div class="text-center"><b>SUN - 11/06</b></div></th><th><div class="text-center"><b>MON - 12/06</b></div></th><th><div class="text-center"><b>TUE - 13/06</b></div></th><th><div class="text-center"><b>WED - 14/06</b></div></th><th><div class="text-center"><b>THU - 15/06</b></div></th><th><div class="text-center"><b>FRI - 16/06</b></div></th><th><div class="text-center"><b>SAT - 17/06</b></div></th><th><div class="text-center"><b>SUN - 18/06</b></div></th><th><div class="text-center"><b>MON - 19/06</b></div></th><th><div class="text-center"><b>TUE - 20/06</b></div></th><th><div class="text-center"><b>WED - 21/06</b></div></th><th><div class="text-center"><b>THU - 22/06</b></div></th><th><div class="text-center"><b>FRI - 23/06</b></div></th><th><div class="text-center"><b>SAT - 24/06</b></div></th><th><div class="text-center"><b>SUN - 25/06</b></div></th><th><div class="text-center"><b>MON - 26/06</b></div></th><th><div class="text-center"><b>TUE - 27/06</b></div></th><th><div class="text-center"><b>WED - 28/06</b></div></th><th><div class="text-center"><b>THU - 29/06</b></div></th><th><div class="text-center"><b>FRI - 30/06</b></div></th>            </tr>
+        </thead>
+        <tbody>
+                                <tr>
+                        <td>1</td>
+                        <td>Diego Serrano (EMP-001)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                <ul style="width:120px;"><li><b>MNCARS</b></li><li>Assign Hrs : 02:30</li></ul>
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>2</td>
+                        <td>Ivan (EMP-002)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                <ul style="width:120px;"><li><b>policianacional</b></li><li>Assign Hrs : 09:00</li></ul>
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>3</td>
+                        <td>dario (EMP-003)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                <ul style="width:120px;"><li><b>policianacional</b></li><li>Assign Hrs : 04:30</li></ul>
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                <ul style="width:120px;"><li><b>MNCARS</b></li><li>Assign Hrs : 09:00</li></ul>
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>4</td>
+                        <td>lorenzo (EMP-004)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>5</td>
+                        <td>Luis  (EMP-005)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                <ul style="width:120px;"><li><b>MNCARS</b></li><li>Assign Hrs : 03:00</li></ul>
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>6</td>
+                        <td>Abel (EMP-006)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>7</td>
+                        <td>Joaquin (EMP-007)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                                        <tr>
+                        <td>8</td>
+                        <td>Joaquin Sanchez (EMP-008)</td>
+                                                    <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                        <td style="width:50% !important;">
+
+                                
+                            </td>
+                                                </tr>    
+                      
+            <tr><td>&nbsp;</td></tr>
+        </tbody>
+    </table>  
+</body>
+</html>

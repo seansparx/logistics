@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Lifecover</title>
+		<link rel="shortcut icon" type="image/x-icon" href="[site_url]assets/layout/images/favicon.ico">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="[site_url]assets/layout/css/jquery-ui.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="[site_url]assets/layout/css/bootstrap.min.css" media="screen">
+		<!--<link rel="stylesheet" type="text/css" href="[site_url]assets/layout/css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="[site_url]assets/layout/css/responsive.css" media="screen">
+-->
+[preview_style]
+[preview_responsive]
+
+		
+
+		<!--[if lt IE 9]>
+		<script src="[site_url]assets/layoutjs/html5shiv.min.js"></script>
+		<![endif]-->
+           [head_code]     
+	</head>
+	<body>
+		<!--Page Wrapper Start-->
+		<div class="wrapper">
+			<!--Header Section Start-->
+			<header class="header">
+					<div class="container clearfix">
+						
+						<div class="row">			
+							<div class="col-sm-6">
+								<div class="logo-wrap">
+									<strong class="logo-text-1">[logo_text1]</strong>
+									<strong class="logo-text-2">[logo_text2] </strong>
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="seal-wrap clearfix">
+									<div class="first-seal">
+										<img src="[site_url]assets/layout/images/norton.png" alt="" />
+									</div>
+									<div class="second-seal">
+										<strong class="review-text">REVIEWS</strong>
+										<ul class="review-star list-style">
+											<li>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</li>
+											<li>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</li>
+										</ul>
+									</div>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+			</header>
+			<!--Header Section End-->
+			
+
+			<!--Content Area Start-->
+			<div id="content">
+				<section class="banner-section">
+					<div class="container clearfix">
+						<div class="row">
+							<div class="col-sm-5 col-md-6">
+								<div class="banner-left">
+									<div class="banner-heading clearfix">
+										<h1 class="mobile-scroll">[main_headline]</h1>
+										<figure class="brand-logo mobile-scroll">
+											<img src="[site_url]files/admin/brand/[logo_image]" alt="" />
+										</figure>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-sm-7 col-md-6 padd-0 pull-right">
+								<div class="banner-right">
+									<div class="form-area form-float">
+											<span class="main-arrow mobile-scroll"></span>
+										<form action="[site_url]leaddesign/form1Data" method="post" enctype="multipart/form-data" id="formdata" class="form-wrapper">
+										[form_data_xtra_field]
+										
+											<h2 class="mobile-scroll">[form_headline]</h2>
+											<strong class="form-area-sub-heading mobile-scroll">[form_sub_headline]</strong>
+											<div class="form-content">
+												<div class="form-row ">
+													<div class="form-element">
+														<input id="first-name" name="first-name" type="text" placeholder="First Name" />
+													</div>
+													<div class="form-element">
+														<input id="last-name" name="last-name" type="text" placeholder="Last Name" />
+													</div>
+												</div>
+												<div class="form-row mobile-row">
+													<div class="form-element">
+														<div class="dob-block dob-visible">
+															<div class="dob-wrap clearfix">
+																<div class="select-wrap date-select">
+																	<select name="dob-day" id="dob-day">
+																		<option value="">Day</option>
+																		<option value="01" selected="selected">01</option>
+																		<option value="02">02</option>
+																		<option value="03">03</option>
+																		<option value="04">04</option>
+																		<option value="05">05</option>
+																		<option value="06">06</option>
+																		<option value="07">07</option>
+																		<option value="08">08</option>
+																		<option value="09">09</option>
+																		<option value="10">10</option>
+																		<option value="11">11</option>
+																		<option value="12">12</option>
+																		<option value="13">13</option>
+																		<option value="14">14</option>
+																		<option value="15">15</option>
+																		<option value="16">16</option>
+																		<option value="17">17</option>
+																		<option value="18">18</option>
+																		<option value="19">19</option>
+																		<option value="20">20</option>
+																		<option value="21">21</option>
+																		<option value="22">22</option>
+																		<option value="23">23</option>
+																		<option value="24">24</option>
+																		<option value="25">25</option>
+																		<option value="26">26</option>
+																		<option value="27">27</option>
+																		<option value="28">28</option>
+																		<option value="29">29</option>
+																		<option value="30">30</option>
+																		<option value="31">31</option>
+																	</select>
+																	<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+																</div>
+																<div class="select-wrap month-select">
+																	<select name="dob-month" id="dob-month">
+
+																		<option value="">MM</option>
+																		<option value="01" selected="selected">01</option>
+																		<option value="02">02</option>
+																		<option value="03">03</option>
+																		<option value="04">04</option>
+																		<option value="05">05</option>
+																		<option value="06">06</option>
+																		<option value="07">07</option>
+																		<option value="08">08</option>
+																		<option value="09">09</option>
+																		<option value="10">10</option>
+																		<option value="11">11</option>
+																		<option value="12">12</option>
+																	</select>
+																	</select>
+																	<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+																</div>
+																<div class="select-wrap year-select">
+																	<select name="dob-year" id="dob-year">
+																		<option value="">YYYY</option>
+																		<option value="2000">2000</option>
+																		<option value="1999">1999</option>
+																		<option value="1998">1998</option>
+																		<option value="1997">1997</option>
+																		<option value="1996">1996</option>
+																		<option value="1995">1995</option>
+																		<option value="1994">1994</option>
+																		<option value="1993">1993</option>
+																		<option value="1992">1992</option>
+																		<option value="1991">1991</option>
+																		<option value="1990">1990</option>
+																		<option value="1989">1989</option>
+																		<option value="1988">1988</option>
+																		<option value="1987">1987</option>
+																		<option value="1986">1986</option>
+																		<option value="1985">1985</option>
+																		<option value="1984">1984</option>
+																		<option value="1983">1983</option>
+																		<option value="1982">1982</option>
+																		<option value="1981">1981</option>
+																		<option value="1980" selected="selected">1980</option>
+																		<option value="1979">1979</option>
+																		<option value="1978">1978</option>
+																		<option value="1977">1977</option>
+																		<option value="1976">1976</option>
+																		<option value="1975">1975</option>
+																		<option value="1974">1974</option>
+																		<option value="1973">1973</option>
+																		<option value="1972">1972</option>
+																		<option value="1971">1971</option>
+																		<option value="1970">1970</option>
+																		<option value="1969">1969</option>
+																		<option value="1968">1968</option>
+																		<option value="1967">1967</option>
+																		<option value="1966">1966</option>
+																		<option value="1965">1965</option>
+																		<option value="1964">1964</option>
+																		<option value="1963">1963</option>
+																		<option value="1962">1962</option>
+																		<option value="1961">1961</option>
+																		<option value="1960">1960</option>
+																		<option value="1959">1959</option>
+																		<option value="1958">1958</option>
+																		<option value="1957">1957</option>
+																		<option value="1956">1956</option>
+																		<option value="1955">1955</option>
+																		<option value="1954">1954</option>
+																		<option value="1953">1953</option>
+																		<option value="1952">1952</option>
+																		<option value="1951">1951</option>
+																		<option value="1950">1950</option>
+																		<option value="1949">1949</option>
+																		<option value="1948">1948</option>
+																		<option value="1947">1947</option>
+																		<option value="1946">1946</option>
+																		<option value="1945">1945</option>
+																		<option value="1944">1944</option>
+																		<option value="1943">1943</option>
+																		<option value="1942">1942</option>
+																		<option value="1941">1941</option>
+																		<option value="1940">1940</option>
+																		<option value="1939">1939</option>
+																		<option value="1938">1938</option>
+																		<option value="1937">1937</option>
+																		<option value="1936">1936</option>
+																		<option value="1935">1935</option>
+																		<option value="1934">1934</option>
+																		<option value="1933">1933</option>
+																		<option value="1932">1932</option>
+																		<option value="1931">1931</option>
+																		<option value="1930">1930</option>
+																		<option value="1929">1929</option>
+																		<option value="1928">1928</option>
+																		<option value="1927">1927</option>
+																		<option value="1926">1926</option>
+																		<option value="1925">1925</option>
+																		<option value="1924">1924</option>
+																		<option value="1923">1923</option>
+																		<option value="1922">1922</option>
+																		<option value="1921">1921</option>
+																		<option value="1920">1920</option>
+																		<option value="1919">1919</option>
+																		<option value="1918">1918</option>
+																		<option value="1917">1917</option>
+																		<option value="1916">1916</option>
+																		<option value="1915">1915</option>
+																		<option value="1914">1914</option>
+																		<option value="1913">1913</option>
+																		<option value="1912">1912</option>
+																		<option value="1911">1911</option>
+																		<option value="1910">1910</option>
+																		<option value="1909">1909</option>
+																		<option value="1908">1908</option>
+																		<option value="1907">1907</option>
+																		<option value="1906">1906</option>
+																		<option value="1905">1905</option>
+																		<option value="1904">1904</option>
+																		<option value="1903">1903</option>
+																		<option value="1902">1902</option>
+																		<option value="1901">1901</option>
+																		<option value="1900">1900</option>
+																	</select>
+																	<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+																</div>
+
+															</div>
+															<div class="select-wrap dob-inital">
+																<span for="dob-day" class="dob-inital-inner">Your Date Of Birth</span>
+																<i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>
+															</div>
+														</div>
+													</div>
+													<div class="form-element">
+														<div class="select-wrap smoke-icon">
+															<select name="smoke-select" id="smoke-select" class="">
+																<option value="">Do you smoke? </option>
+																<option value="Yes">Yes</option>
+																<option value="No" selected="selected">No</option>
+															</select>
+															<i class="material-icons">smoking_rooms</i>
+														</div>
+													</div>
+												</div>
+												<div class="form-row mobile-row">
+													<div class="form-element">
+														<input id="phone-no" name="phone-no" type="text" placeholder="Phone" />
+													</div>
+													<div class="form-element">
+														<input id="email" name="email" type="text" placeholder="Email" />
+													</div>
+												</div>
+												<div class="form-row">
+													<div class="form-element">
+														<input id="address" name="address" type="text" placeholder="Address" />
+													</div>
+													<div class="form-element">
+														<input id="postcode" name="postcode" type="text" placeholder="Postcode" />
+													</div>
+												</div>
+												<div class="form-row">
+													<div class="form-element clearfix select-width-50">
+														<strong>Cover Amount:</strong>
+														<div class="select-wrap">
+															<select name="cover-amount" id="cover-amount">
+																[cover_amount]
+															</select>
+															<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+														</div>
+													</div>
+													<div class="form-element select-width-50">
+														<strong>Cover Length:</strong>
+														<div class="select-wrap">
+															<select name="cover-length" id="cover-length">
+																[cover_length]
+															</select>
+															<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+												<div class="form-row">
+													<div class="form-element select-width-50">
+														<strong>Required For?:</strong>
+														<div class="select-wrap">
+															<select name="required" id="required">
+																[required]
+															</select>
+															<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+														</div>
+													</div>
+													<div class="form-element select-width-50">
+														<strong>Insurance Type:</strong>
+														<div class="select-wrap">
+															<select name="insurance" id="insurance">
+																[insurance_type]
+															</select>
+															<i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+														</div>
+													</div>
+												</div>
+												<div class="btn-wrap">
+													<button class="form-btn" id="submit-btn" type="submit">
+														<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+														<strong>[cta1_maintext]</strong>
+														<span>[cta1_sub_maintext]</span>
+														<i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i>
+													</button>
+												</div>
+												<div class="form-terms">
+													[disclaimer_text]
+												</div>
+											</div>
+										</form>
+									</div>
+                                                                    <div class="main-overlay">
+           <figure>
+            <img class="loader-img" src="[site_url]assets/layout/images/loader.png" alt="">
+           </figure>
+           
+           <strong class="wait">Please Wait...</strong>
+           <p>We are looking for the best quote for you...</p>
+          </div>
+								</div>
+							</div>
+							<div class="col-sm-5 col-md-6">
+								<div class="banner-sub-content">
+
+									<strong class="banner-subheading mobile-scroll">[main_sub_headline]</strong>
+									<ul class="bullets-list list-style">
+
+										<li>
+											<i class="glyphicon glyphicon-ok-sign" aria-hidden="true"></i> [bullet_points1]
+										</li>
+										<li>
+											<i class="glyphicon glyphicon-ok-sign" aria-hidden="true"></i> [bullet_points2]
+										</li>
+										<li>
+											<i class="glyphicon glyphicon-ok-sign" aria-hidden="true"></i> [bullet_points3]
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+			</section>
+			<section class="insurance-rates">
+				<div class="container">
+					<h2>[step_headline]</h2>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="step1-wrap">
+								<span class="active">1</span>
+								<strong>[step1_maintext] </strong>
+								<p>
+									[step1_subtext]
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="step-wrap">
+								<span>2</span>
+								<strong>[step2_maintext] </strong>
+								<p>
+									[step2_subtext]
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="step-wrap">
+								<span>3</span>
+								<strong>[step3_maintext] </strong>
+								<p>
+									[step3_subtext]
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="add-cta-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="btn-wrap ">
+								<button class="form-btn long-btn">
+									<i aria-hidden="true" class="glyphicon glyphicon-arrow-right"></i>
+									<strong>[cta2_maintext]</strong>
+									<span>[cta2_sub_maintext]</span>
+									<i aria-hidden="true" class="glyphicon glyphicon-arrow-left"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-insurance-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="about-insurance-img">
+								<img src="[site_url]files/admin/brand/[logo_image]" alt="" />
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="about-insurance-content">
+								<h2>[about_headline]</h2>
+								<p>
+								[about_text]
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="compare-insurance-wrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-md-8">
+							<ul class="list-style brand-list clearfix">
+								<li><img src="[site_url]assets/layout/images/brand-1.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-2.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-3.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-4.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-5.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-6.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-7.png" alt="" />
+								</li>
+								<li><img src="[site_url]assets/layout/images/brand-8.png" alt="" />
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<div class="compare-insurance-content">
+								<h2>[compare_headline]</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="btn-wrap ">
+								<button class="form-btn long-btn">
+									<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>
+									<strong>[cta3_maintext]</strong>
+									<span>[cta3_subtext]</span>
+									<i class="glyphicon glyphicon-arrow-left" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonial-wrap">
+				<div class="container">
+					<div class="customers-say">
+						<h2> [testimonial_headline] </h2>
+						<div class="text">
+							<i class="comma-left-icon">"</i>
+							<p>
+								[testimonial_text]
+							</p>
+							<i class="comma-right-icon">"</i>
+						</div>
+						<figure class="client-img">
+							<img src="[site_url]assets/layout/images/client.png" alt="" />
+						</figure>
+						<strong class="client-name">[testimonial_info]</strong>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!--Content Area End-->
+
+		<!--Footer Section Start-->
+		[footer]
+		<!--Footer Section End-->
+
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="privacy-policy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content model-block">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<section class="model-info">
+							<h2>Privacy Policy </h2>
+							<p>
+								This Privacy Policy governs the manner in which NUNU Media   collects, uses, maintains and discloses information collected from  users  (each, a "User") of the www.lifecoversearch.com website ("Site").  This  privacy policy applies to the Site and all products and services  offered  by NUNU Media.
+							</p>
+							<h2> Personal identification information</h2>
+							<p>
+								We may collect personal identification information from Users   in a variety of ways, including, but not limited to, when Users visit   our site, fill out a form, and in connection with other activities,   services, features or resources we make available on our Site. Users may   be asked for, as appropriate, name, email address, mailing address,   phone number. Users may, however, visit our Site anonymously. We will   collect personal identification information from Users only if they   voluntarily submit such information to us. Users can always refuse to   supply personally identification information, except that it may prevent   them from engaging in certain Site related activities.
+							</p>
+							<h2> Non-personal identification information</h2>
+							<p>
+								We may collect non-personal identification information about   Users whenever they interact with our Site. Non-personal identification   information may include the browser name, the type of computer and   technical information about Users means of connection to our Site, such   as the operating system and the Internet service providers utilized and   other similar information.
+							</p>
+							<h2> Web browser cookies</h2>
+							<p>
+								Our Site may use "cookies" to enhance User experience. User's   web browser places cookies on their hard drive for record-keeping   purposes and sometimes to track information about them. User may choose   to set their web browser to refuse cookies, or to alert you when  cookies  are being sent. If they do so, note that some parts of the Site  may not  function properly.
+							</p>
+							<h2> How we use collected information</h2>
+							<p>
+								NUNU Media may collect and use Users personal information for the following purposes:
+							</p>
+							<p>
+								- To improve customer service
+								<br>
+								Information you provide helps us respond to your customer service requests and support needs more efficiently.
+								<br>
+								- To personalize user experience
+								<br>
+								We may use information in the aggregate to understand how our   Users as a group use the services and resources provided on our Site.
+								<br>
+								- To improve our Site
+								<br>
+								We may use feedback you provide to improve our products and services.
+							</p>
+							<h2> How we protect your information</h2>
+							<p>
+								We adopt appropriate data collection, storage and processing   practices and security measures to protect against unauthorized access,   alteration, disclosure or destruction of your personal information,   username, password, transaction information and data stored on our Site.
+							</p>
+							<p>
+								Sensitive and private data exchange between the Site and its   Users happens over a SSL secured communication channel and is encrypted   and protected with digital signatures.
+							</p>
+							<h2> Sharing your personal information</h2>
+							<p>
+								We do not sell, trade, or rent Users personal identification   information to others. We may share generic aggregated demographic   information not linked to any personal identification information   regarding visitors and users with our business partners, trusted   affiliates and advertisers for the purposes outlined above.
+							</p>
+							<h2> Third party websites</h2>
+							<p>
+								Users may find advertising or other content on our Site that   link to the sites and services of our partners, suppliers, advertisers,   sponsors, licensors and other third parties. We do not control the   content or links that appear on these sites and are not responsible for   the practices employed by websites linked to or from our Site. In   addition, these sites or services, including their content and links,   may be constantly changing. These sites and services may have their own   privacy policies and customer service policies. Browsing and  interaction  on any other website, including websites which have a link  to our Site,  is subject to that website's own terms and policies.
+							</p>
+							<h2> How can I opt out of using my information?</h2>
+							<p>
+								We think you will be delighted with the service of Yourdomain and the provided insurance plans. But you can easily opt out of using your information by sending us an email to <a href="mailto:unsunbscribe@lifecoversearch.com">unsunbscribe@lifecoversearch.com</a> with the header UNSUBSCRIBE.
+							</p>
+							<h2> Changes to this privacy policy</h2>
+							<p>
+								NUNU Media has the discretion to update this privacy   policy at any time. When we do, we will revise the updated date at the   bottom of this page and send you an email. We encourage Users to   frequently check this page for any changes to stay informed about how we   are helping to protect the personal information we collect. You   acknowledge and agree that it is your responsibility to review this   privacy policy periodically and become aware of modifications.
+							</p>
+							<h2> Your acceptance of these terms</h2>
+							<p>
+								By using this Site, you signify your acceptance of this  policy  and terms of service. If you do not agree to this policy, please  do  not use our Site. Your continued use of the Site following the  posting  of changes to this policy will be deemed your acceptance of  those  changes.
+							</p>
+							<h2> Contacting us</h2>
+							<p>
+								If you have any questions about this Privacy Policy, the   practices of this site, or your dealings with this site, please contact   us at:
+							</p>
+							<p>
+								<br>
+								LifeCoverSearch.com is wholly owned and operated by NUNU Media Suite 339, Two Mile Hill Road, Kingswood, Bristol, Avon BS15 1AN
+							</p>
+							<p>
+								<br>
+								 www.lifecoversearch.com
+								<br>
+								info@lifecoversearch.com
+							</p>
+							<p>
+								&nbsp;
+							</p>
+						</section>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content model-block">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+
+						<section class="model-info">
+							<h2>Terms &amp; Conditions</h2>
+							<h1>&nbsp;</h1>
+							<h2><strong>Jurisdiction</strong></h2>
+							<p>
+								This site is intended for use only by those who can access it from within the UK
+							</p>
+							<h2><strong>Governing Law</strong></h2>
+							<p>
+								This site is governed by English law and any dispute or    action  arising out of this site shall be determined in accordance with    such  laws.
+							</p>
+							<h2><strong>Contact</strong></h2>
+							<p>
+								If you believe any information on this site is inaccurate  or   have any  suggestions on how the content of this site could be    improved or if you  have questions on a particular product or service    please contact us.
+							</p>
+							<h2><strong>Changes</strong></h2>
+							<p>
+								We will update the content of this notice from time to  time.   Please  ensure that you visit this page regularly and refresh your    browser to  ensure your information is up to date.
+							</p>
+							<h2><strong>Customer responsibility</strong></h2>
+							<p>
+								It is your responsibility to ensure that your computer is    virus  protected. We accept no responsibility for any loss you may    suffer as a  result of accessing or downloading information from this    site.
+							</p>
+							<h2><strong>Accuracy and Validity of Information</strong></h2>
+							<p>
+								Whilst we take all reasonable steps to ensure that the    information  contained within these pages is accurate and up to date, it    is  nonetheless supplied on an “as is” basis and accordingly we do  not    accept any liability for any errors or omissions. If you are in  any    doubt as to the validity of information made available within  these    pages, we recommend you seek verification by contacting us.
+							</p>
+							<h2><strong>Availability</strong></h2>
+							<p>
+								Whilst we take all reasonable steps to ensure this website   is  always  accessible we will not be held liable if, for any reason, the    website is  unavailable for any period. We may also have to suspend    access to the  website for routine or emergency updates and maintenance    but we will  endeavour to keep any disruption to a minimum. In  addition   we cannot  warrant that this website will be free of viruses  or  defects  of any  description and we will not be held responsible for  any   technical  problems you may suffer as a result of your use of  this   website.
+							</p>
+							<h2><strong>Third Party Websites</strong></h2>
+							<p>
+								This website may also contain links to websites operated by    third  parties. The responsibility for the operation and content of    those  websites shall rest solely with the organisation identified as     controlling the third party website and will be governed by separate     terms and conditions. Links are provided for convenience and inclusion     of any link does not imply endorsement in any way of the site to  which    it links. We accept no responsibility or liability for the  contents of    any linked website.
+							</p>
+							<h2><strong>Privacy Statement</strong></h2>
+							<p>
+								In accordance with the guidelines and rules set out in the    Data  Protection Act 1998. We will not disclose your personal details to    any  third parties unless it is necessary to do so. On those  occasions   when  we do need to disclose personal information, such as  preparing  Key  Facts  Illustrations for you, processing your business,  or  obtaining   compliance and regulatory advice, we will do so on a   confidential basis   and in accordance with the Data Protection Act.
+							</p>
+							<h2><strong>Privacy Policy</strong></h2>
+							<p>
+								We have notified our processing of personal data under the    Data  Protection Act 1998. We respect your personal privacy and will not    use  your personal information in any way that we would not accept    ourselves.  We have set out the following information about how we    manage the  personal information that we do collect. If you have any    comments or  concerns regarding our privacy policy please contact us at <a href="mailto:info@lifecoversearch.com">info@lifecoversearch.com</a>.
+							</p>
+							<h2><strong>What we use personal data for</strong></h2>
+							<p>
+								We collect personal data to enable us to identify you and  to   deliver  personalised offers and promotions based upon your    demographics and  product purchase profile, and for the purposes of    statistical analysis.  The information is used for system administration    purposes and to form  personalised profiles and demographics that we    may use to improve the  content of our communications to you.
+							</p>
+							<h2><strong>What we won’t do with your personal data</strong></h2>
+							<p>
+								We will not sell, rent or disclose your personal details to any third parties, except:
+							</p>
+							<p>
+								1.When required to do so by law
+							</p>
+							<p>
+								2.In response to a valid legal request by a law enforcement officer or government agency
+							</p>
+							<p>
+								3.When you have explicitly or implicitly given your consent.
+							</p>
+							<h2><strong>Access To Personal Data</strong></h2>
+							<p>
+								Under the Data Protection Act 1998 you can request copies  of   the  personal information we hold on you by contacting us via  writing.
+							</p>
+							<p>
+								&nbsp;
+							</p>
+						</section>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content model-block">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						
+						<section class="model-info">
+    <h2>CONTACT US</h2>
+
+
+    <p>We recommend to complete the  QUOTE form instead of the contact form as we can call you much faster ! </p>
+
+
+
+  <div class="contact-form">
+      <form action="[site_url]leaddesign/contactForm" enctype="multipart/form-data" method="post" id="contact_form">
+    		
+    	   
+    	<div class="form-row">
+    		<label >Full name: *</label>
+    		<input name="name" id="name" type="text" value="" >
+    	</div>
+    	<div class="form-row">
+    		<label >Main phone number: *</label>
+    		<input name="phone" id="phone" type="text" value="" >
+    	</div>
+    	<div class="form-row">
+    		<label >Email: *</label>
+    		<input name="email" id="email" type="text" value="" >
+    	</div>
+    	<div class="form-row">
+    		<label>Your message:( Please include your  ADDRESS details )</label>
+    		<textarea name="message" id="message" rows="7" cols="60"></textarea>
+    	</div>
+    	<div class="form-row">
+    		<input class="submit-btn" id="submit_contact" type="submit" value="Submit">
+    	</div>
+    	</form>
+    </div>
+      </section>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--Page Wrapper End-->
+		<script type="text/javascript" src="[site_url]assets/layout/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="[site_url]assets/layout/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="[site_url]assets/layout/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="[site_url]assets/layout/js/site.js"></script>
+                [body_code]
+	</body>
+</html>

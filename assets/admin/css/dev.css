@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 May, 2015, 2:53:19 PM
+    Author     : sis194
+*/
+.add_extra_fields_value {
+margin-left: 147px;
+display: none;
+}
+div#add_extra_field_above_this_id {
+margin-bottom: 20px;
+}
+
+.enable {
+    background-color:white;
+    color: green;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.disable {
+    background-color:white;
+    color: red;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
